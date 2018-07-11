@@ -1,0 +1,6 @@
+/**
+ * Visual Composer Overrides.
+ */
+.type-office .vc_column_container.sidebar {
+  padding-left: 30px !important;
+  padding-right: 30px !important; }

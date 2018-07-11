@@ -1,0 +1,4 @@
+[28-Sep-2015 15:00:54 UTC] PHP Fatal error:  Call to undefined function makeVcard() in /home/gateleyplc/public_html/wp-content/themes/gateley-plc/assets/inc/general-functions/makevcard.php on line 1
+[28-Sep-2015 15:01:25 UTC] PHP Fatal error:  Call to undefined function get_the_title() in /home/gateleyplc/public_html/wp-content/themes/gateley-plc/assets/inc/general-functions/makevcard.php on line 21
+[28-Sep-2015 15:01:27 UTC] PHP Fatal error:  Call to undefined function get_the_title() in /home/gateleyplc/public_html/wp-content/themes/gateley-plc/assets/inc/general-functions/makevcard.php on line 21
+[28-Sep-2015 15:01:52 UTC] PHP Fatal error:  Call to undefined function makeVcard() in /home/gateleyplc/public_html/wp-content/themes/gateley-plc/assets/inc/general-functions/makevcard.php on line 1

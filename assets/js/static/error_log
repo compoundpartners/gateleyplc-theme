@@ -1,0 +1,3 @@
+[29-Sep-2015 09:09:21 UTC] PHP Fatal error:  Call to undefined function wp_locate_loader() in /home/gateleyplc/public_html/wp-content/themes/gateley-plc/assets/js/scripts.js.php on line 1
+[29-Sep-2015 09:11:51 UTC] PHP Fatal error:  Call to undefined function wp_locate_loader() in /home/gateleyplc/public_html/wp-content/themes/gateley-plc/assets/js/scripts.js.php on line 1
+[29-Sep-2015 09:11:53 UTC] PHP Fatal error:  Call to undefined function wp_locate_loader() in /home/gateleyplc/public_html/wp-content/themes/gateley-plc/assets/js/scripts.js.php on line 1

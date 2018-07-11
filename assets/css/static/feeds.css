@@ -1,0 +1,267 @@
+/*
+** Feed
+** Settings
+*/
+
+.feeds-container {
+	padding: 30px;
+	background: #fff;
+}
+.twitter-header, .blog-header, .news-header, .investors-header, .feed-header {
+	color: #fff;
+	padding: 12px 20px;
+	height: 45px;
+	font-size: 16px;
+}
+.spotlight-slider .feed-header {
+	margin: -5px -5px 5px;
+	padding: 12px 15px;
+}
+/*
+.blog-header {
+	background: #60c6c5;
+}
+.twitter-header {
+	background: #4fc6f8;
+}
+*/
+.feed-wrapper.spotlight-wrapper {
+	padding: 0px;
+}
+.investors-header {
+	background: #49a1d2;
+}
+.news-header, .twitter-header, .blog-header, .feed-header {
+	background: #3d1a54;
+}
+.feed-btn {
+	padding: 13px;
+	float: right;
+	margin-top: -12px;
+	margin-right: -20px;
+	font-size: 12px;
+	color: #fff;
+	height: 45px;
+}
+/*
+.twitter-header .feed-btn {
+	background: #86dcfb;
+}
+.blog-header .feed-btn {
+	background: #38c0bf;
+}
+*/
+.news-header .feed-btn, .twitter-header .feed-btn, .blog-header .feed-btn {
+	background: #4d2c6d;
+}
+a.media, .media.white {
+	display: block;
+	background: #fff;
+}
+.feed-wrapper a.media .media-body {
+	padding: 0px;
+}
+.feed-wrapper .icon:first-child {
+	margin-left: 0px;
+}
+.feed-wrapper .icon {
+	color: #89d4d4;
+	font-size: 18px;
+	width: 20px;
+	height: 18px;
+	margin-left: 10px;
+}
+.feed-wrapper .icon.large {
+	font-size: 60px;
+	width: 65px;
+	height: 60px;
+}
+.feed-wrapper .readmore-link, .readmore-link {
+	color: #89d4d4;
+	color: #3d1a54;
+	font-weight: bold
+}
+a.media:hover {
+	text-decoration: none;
+}
+.feed-wrapper.blog-feed a.media:hover h4, .feed-wrapper.twitter-feed .media-heading a, .feed-wrapper.twitter-feed .icon {
+	color: #60c6c5
+}
+.feed-wrapper.blog-feed a.media:hover {
+	color: #585858
+}
+.feed-wrapper {
+	border: 1px solid #ccc;
+	border-top-color: transparent;
+	margin-top: -1px;
+	padding: 15px 20px;
+	min-height: 300px;
+	box-sizing: border-box;
+ -webkit-box-sizing::border-box;
+	max-width: 100%;
+}
+.feed-wrapper.no-pad {
+	padding: 0px;
+}
+.feed-content-wrapper {
+	padding: 20px;
+}
+.iframe-wrapper.feed-wrapper {
+	min-height: auto;
+}
+/*.feed-wrapper.twitter-feed .media-heading a, .feed-wrapper.twitter-feed .icon{	color:#4fc6f8 !important}*/
+.feed-wrapper .dropdown, .post-meta .dropdown, .feed-wrapper .dropup, .post-meta .dropup {
+	float: left;
+}
+.feed-wrapper .media, .feed-wrapper .media-body {
+	overflow: visible;
+}
+.dropdown-menu.social-dropdown-menu {
+	min-width: 180px;
+}
+.dropdown-menu.social-dropdown-menu li {
+	width: auto;
+	display: inline-block;
+	float: left;
+	padding: 0px;
+}
+.dropdown-menu.social-dropdown-menu li::before {
+	display: none;
+}
+.dropdown-menu.social-dropdown-menu li a {
+	padding: 8px 8px 5px 8px;
+	color: #fff;
+}
+.dropdown-menu.social-dropdown-menu li.email a {
+	background: #60c6c5
+}
+.dropdown-menu.social-dropdown-menu li.twitter a {
+	background: #4fc6f8
+}
+.dropdown-menu.social-dropdown-menu li.linkedin a {
+	background: #007bb6
+}
+.dropdown-menu.social-dropdown-menu li.facebook a {
+	background: #3b5998
+}
+.dropdown-menu.social-dropdown-menu li.googleplus a {
+	background: #d34836
+}
+.dropdown-menu.social-dropdown-menu li.pinterest a {
+	background: #cb2027
+}
+.dropdown-menu.social-dropdown-menu li a:hover {
+	background: #eee !important;
+}
+.spotlight .dropdown-menu.social-dropdown-menu li a {
+	padding: 5px;
+}
+.feed-wrapper .media-body, .spotlight {
+	font-size: 14px;
+}
+.twitter-feed.feed-wrapper h4.media-heading {
+	font-size: 16px;
+}
+.feed-wrapper h4.media-heading {
+	font-size: 18px;
+}
+.feed-wrapper.twitter-feed .icon.large {
+	margin-right: 0px !important;
+}
+.feed-wrapper iframe {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.feed-wrapper .media-left {
+	width: 80px;
+}
+.feed-wrapper .media-left .day, .feed-wrapper .media-left .month {
+	display: block;
+	line-height: 1;
+}
+.feed-wrapper.blog-feed .media-left .day {
+	color: #60c6c5
+}
+.feed-wrapper .media-left {
+	text-align: left;
+}
+.feed-wrapper .media-left .day {
+	font-size: 40px;
+}
+.feed-wrapper .media-left .month {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #585858;
+}
+
+#officeswitcher {
+	width: 70%;
+	float: left;
+}
+
+
+.widget_frm_show_form, .gateley-office-list {clear:both;}
+@media screen and (min-width:980px) and (max-width:1024px) {
+.absolute-feed .news-feed .media:last-child {
+	display:none;
+}
+}
+@media screen and (min-width:980px) {
+.absolute-feed {
+	left: 0%;
+	position: absolute;
+	right: 0%;
+	top: 20%;
+	z-index: 1000;
+	pointer-events: none;
+}
+.absolute-feed .media {
+	margin-top:10px;
+		pointer-events: auto;
+
+}
+
+
+.absolute-feed .media-body {
+  padding-left: 60px !important;
+  padding-right: 20px;
+}
+.absolute-feed .media, .absolute-feed .media h4, .absolute-feed .media-left .day {
+	color: #fff;
+}
+ .absolute-feed .media h4 {
+  font-size: 18px;
+}
+ .absolute-feed .media-left .month {
+
+  font-size: 18px;
+
+}
+.absolute-feed .media-left .day {
+  color: #ffffff;
+  display: block;
+  font-size: 30px;
+  line-height: 1;
+}
+.absolute-feed .readmore-link {color:#eeeeee;}
+}
+
+@media screen and (min-width:1200px) {
+
+.absolute-feed {
+	
+	top: 30%;
+}
+}
+
+@media screen and (max-width:980px) {
+.absolute-feed {
+padding:20px; background:#fff;
+}
+
+}
+
+.ie6 .absolute-feed, .ie7 .absolute-feed, .ie8 .absolute-feed {
+	display:none !important;
+}

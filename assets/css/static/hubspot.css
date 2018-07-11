@@ -1,0 +1,36 @@
+/**
+ * Hubspot Form Embeds.
+ */
+.hs-form fieldset {
+  max-width: 100% !important; }
+
+.hs-input {
+  background-color: #d0d0d0;
+  border: 0;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100% !important; }
+
+.hs-button {
+  background-color: #60c6c5;
+  border: 1px solid #60c6c5;
+  color: #fff;
+  padding: 6px 12px; }
+  .hs-button:hover {
+    background-color: #286090;
+    border-color: #204d74; }
+
+.hs-form-field {
+  margin-bottom: 20px !important; }
+
+.hs-error-msgs {
+  margin-top: 6px; }
+  .hs-error-msgs li::before {
+    top: 2px; }
+  .hs-error-msgs label {
+    color: #a94442;
+    font-weight: normal; }
+
+@media screen and (max-width: 500px) {
+  .hs-form-field {
+    width: 100% !important; } }

@@ -1,0 +1,89 @@
+.timeline {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.timeline-item {
+    overflow: hidden;
+    padding: 0 0 1em;
+  
+    *zoom: 1;
+    width: 100%;
+}
+
+.timeline-item-img {
+    float: left;
+    margin-right: 33px;
+    border-radius: 5px;
+    overflow: hidden;
+    width:50px;
+    padding-top:18px;
+}
+
+.timeline-item-img img { display: block }
+
+.timeline-item-body { overflow: hidden }
+
+.timeline-item .text {
+    padding: 10px;
+    background: #fff;
+}
+
+.timeline-item .text p:last-child { margin: 0 }
+
+.timeline-item .attribution {
+    margin: 0.5em 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Decoration */
+
+.timeline, .timeline-item { position: relative }
+
+.timeline:before, .timeline-item:before, .timeline-item .text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+
+.timeline:before {
+	top:50px;
+    width: 6px;
+    left: 60px;
+    bottom: 100px;
+    background:#89d4d4;
+}
+
+.timeline-item::before {
+  background: #89d4d4 none repeat scroll 0 0;
+  border-radius: 100px;
+  height: 20px;
+  margin: 16px 0 0 -12px;
+  width: 20px;
+}
+
+.timeline-item:hover {
+    /*  cursor: url('../images/FB_CUR.cur');  See the result on http://lab.web-gate.fr/timeline/ */ 
+    cursor: cell; /* This line is for the cursor */
+}
+
+.timeline-item:hover:before { background: #3d1a54 }
+
+.timeline-item .text:before {
+    top: 18px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #fff;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}

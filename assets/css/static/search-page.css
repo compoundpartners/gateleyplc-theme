@@ -1,0 +1,33 @@
+.search-table .vc_col-xs-1, .search-table .vc_col-sm-1, .search-table .vc_col-md-1, .search-table .vc_col-lg-1, .search-table .vc_col-xs-2, .search-table .vc_col-sm-2, .search-table .vc_col-md-2, .search-table .vc_col-lg-2, .search-table .vc_col-xs-3, .search-table .vc_col-sm-3, .search-table .vc_col-md-3, .search-table .vc_col-lg-3, .search-table .vc_col-xs-4, .search-table .vc_col-sm-4, .search-table .vc_col-md-4, .search-table .vc_col-lg-4, .search-table .vc_col-xs-5, .search-table .vc_col-sm-5, .search-table .vc_col-md-5, .search-table .vc_col-lg-5, .search-table .vc_col-xs-6, .search-table .vc_col-sm-6, .search-table .vc_col-md-6, .search-table .vc_col-lg-6, .search-table .vc_col-xs-7, .search-table .vc_col-sm-7, .search-table .vc_col-md-7, .search-table .vc_col-lg-7, .search-table .vc_col-xs-8, .search-table .vc_col-sm-8, .search-table .vc_col-md-8, .search-table .vc_col-lg-8, .search-table .vc_col-xs-9, .search-table .vc_col-sm-9, .search-table .vc_col-md-9, .search-table .vc_col-lg-9, .search-table .vc_col-xs-10, .search-table .vc_col-sm-10, .search-table .vc_col-md-10, .search-table .vc_col-lg-10, .search-table .vc_col-xs-11, .search-table .vc_col-sm-11, .search-table .vc_col-md-11, .search-table .vc_col-lg-11, .search-table .vc_col-xs-12, .search-table .vc_col-sm-12, .search-table .vc_col-md-12, .search-table .vc_col-lg-12 {
+	padding:5px;
+}
+.search-terms {color:#fff;}
+
+.search-results .pagination-wrap {width:100%; display:block;}
+
+
+.careers-wrapper {
+  background: #f0f0f0 none repeat scroll 0 0;
+  margin: 0 -40px;
+  padding: 30px;
+}
+
+.careers-searchform {margin-bottom:30px;}
+
+.careers-searchform .form-group {min-width:90%}
+
+
+ .page-template-jobroles-page .loop-title {margin-left:0px;}
+ 
+ 
+ .page-template-jobroles-page .careers .media h3 {
+font-size:20px;	 
+ }
+ 
+  .page-template-jobroles-page .careers .media-left {
+	border-right:1px solid #e0e0e0;  
+  }
+  
+  .blog .search-page .form-control {
+	color:#000;  
+  }

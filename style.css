@@ -1,0 +1,402 @@
+/*
+Theme Name: gateley-plc
+Theme URI: http://www.gateleyplc.com/
+Author:DesignReligion
+Author URI: http://www.designreligion.co.uk/
+Description: Description
+Version: 1.0.0
+Text Domain: gateley-plc
+License: Copyright Gateley Plc
+License URI: http://www.gateleyplc.com
+*/
+
+/* Global - Colours */
+.site-header, .site-footer, .purple {
+	background-color: #3D1A54 !important; 
+	color: #fff;
+}
+.purple h1, .purple h2, .purple h3, .purple h4, .purple h5, .purple h6 {
+	color: #fff;
+}
+.site-footer .menu li a, .site-footer .menu .sub-menu li a, .site-footer .menu li.highlighted ul.sub-menu li a {
+	color: #fff;
+}
+.site-info-footer {
+	background: #231237;
+	color: #fff;
+}
+.site-info-footer a {
+	color: #fff;
+}
+a {
+	
+}
+.wpb_column .vc_images_carousel {
+  position: relative;
+  max-width: 100% !important;
+}
+/* Global - Header */
+.content-inner .wpb_single_image img {width:100%; height:auto;}
+.site-header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	padding: 10px 0 15px 0;
+}
+.site-branding img {
+	max-width: 200px;
+	padding: 10px;
+}
+.site-branding {
+	display: inline-block;
+	width: auto;
+}
+.logged-in.admin-bar .site-header {
+	top: 30px;
+}
+/* Global - Content */
+
+.site-content,  body.main.disclaimer1.home .site-content, body.main.disclaimer2.home .site-content {
+	padding-top: 72px;
+}
+
+
+body.main.disclaimer1.home .page-header, body.main.disclaimer2.home .page-header {
+margin-bottom:30px !important;	
+}
+.has-hero-slider .site-content {
+	padding-top: 0px;
+}
+.vc_row.row-no-pad {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.col-no-pad {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.copyright {
+	width: auto;
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+
+.title-header {background:#ececec; padding:3px 12px;margin-bottom:10px; position:relative;}
+
+.title-header h4 {width:auto; display:inline-block;}
+.title-header .btn {position:absolute; right:0px; top:0px; padding:14px 18px; background:#e0e0e0}
+/* Global - sidebar*/
+ 
+ .sidebar {
+	background: #dddddd none repeat scroll 0 0;
+	box-sizing: border-box;
+	min-height: 50vh;
+	padding: 30px;
+}
+
+.sidebar .thumbnail {
+	margin-right: 5px;
+}
+
+.matchHeight {box-sizing:border-box}
+
+/* Accordian */
+.vc_tta.vc_general .vc_tta-panel {
+margin-bottom:20px;	
+}
+.vc_tta.vc_tta-shape-rounded .vc_tta-panel-body, .vc_tta.vc_tta-shape-rounded .vc_tta-panel-heading {
+border-radius:0px;	
+}
+
+
+/* Investors Page Header */
+
+
+.investor-page-header {
+background:url(../img/investors-header.jpg);
+background-size:auto 100%;	
+height:500px;
+background-repeat:repeat-x;
+background-position:top center;
+}
+	
+.investor-page-header .page-title {
+  padding-top: 380px;
+}
+.investor-page-header .page-title h1 {width:auto; float:left;}
+
+.share-price-table-iframe {
+width:100%;
+height:800px;	
+}
+	
+	
+	.fluidMedia {
+    position: relative;
+    padding-top: 0px;
+}
+
+.fluidMedia iframe {
+    top: 0; 
+    left: 0;
+    width: 100%;
+}
+.sidebar .loop-title {
+  margin-left: 10px;
+}
+/* Comments */
+
+.comments-area {
+  padding: 30px 40px 30px 40px;
+  background: #f0f0f0;
+}
+.comment-list {float:left;}
+.comment {width:100%;
+float:left;}
+
+.comment .reply {
+float:left; witdth:auto;	
+}
+.comment-content {
+float:left;
+width:80%;
+padding-right:20px	
+}
+.comments-area hr {
+	border-color:#fff;
+}
+.comments-area textarea {width:100%;}
+/* Page Header */
+
+	.people-search {position:relative; width:100%;}
+
+.page-header {
+	background-color: #644876;
+	background-size: cover;
+	background-position:center center;
+	margin-bottom: -80px !important;
+}
+
+.has-post-thumbnail .page-header, .has-post-thumbnail.page-header {
+	padding: 0px;
+}
+
+
+.page-header h1, .page-header h2, .page-header h3, .page-header h4, .page-header h5 {
+	color: #fff;
+}
+
+.has-post-thumbnail .page-header .cover, .has-post-thumbnail.page-header .cover {
+	/*background: #000;
+	background: rgba(0,0,0,0.7);*/
+	height: 100%;
+}
+
+.ie6 .has-post-thumbnail .page-header .cover, .ie6 .has-post-thumbnail.page-header .cover, .ie7 .has-post-thumbnail .page-header .cover, .ie7 .has-post-thumbnail.page-header .cover, .ie8 .has-post-thumbnail .page-header .cover, .ie8 .has-post-thumbnail.page-header .cover {
+
+		filter: alpha(opacity =50);
+}
+.page-header .cover.no-feature {
+	background: transparent;
+}
+.page-header h1 {
+	color: #fff;
+	font-size: 35px;
+	width: auto;
+	display: inline-block;
+}
+.page-header .widget-searchform {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.widget-searchform .searchform-inpage {
+margin-top:5px;	
+}
+.single .page-header .cover {
+	padding-bottom: 70px; 
+}
+
+.loop-title {margin-top:10px;}
+/*.page .content-inner {
+	min-height:50vh;
+}
+*/
+.content-inner {
+	padding: 40px;
+	background: #fff;
+	margin-bottom: 30px;
+}
+
+.investor .content-inner {
+		padding: 40px 0px;
+
+}
+
+.relative  {
+position:relative;	
+}
+
+.zindex100 {
+z-index:100;	
+}
+
+
+/* Global - Footer */
+
+
+.site-footer, .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
+	color: #fff;
+}
+.site-footer h4 {font-size:18px;}
+.site-footer .form-inline .form-group {
+	width: 100%;
+}
+.site-footer .form-inline .form-group .form-control {
+	width: 100%;
+	padding-left: 0px;
+}
+.site-footer .form-inline .icon {
+	font-size: 20px;
+	color: #fff;
+}
+.site-footer .form-inline button:hover .icon {
+	color: #60c6c5
+}
+.site-footer button {
+	margin-left: -30px;
+}
+.site-footer .social-menu  i.icon {
+    width: 30px;
+    height: 24px;
+    font-size: 20px;
+}
+.social-menu  i.icon {
+  width: 35px;
+    height: 30px;
+    font-size: 30px;
+}
+.site-header .social-menu  i.icon {
+margin-top:-6px;	
+}
+.site-header .social-menu {
+margin-top:5px;	
+}
+.bydesignreligion {
+	background: rgba(0, 0, 0, 0) url("../img/by-designreligion.png") no-repeat scroll right center;
+	display: block;
+	float: right;
+	height: 30px;
+	width: 120px;
+}
+
+.sidebar .widget_nav_menu{padding:0px 30px}
+.blog .sidebar .widget_nav_menu{padding:0px 0px}
+
+.sidebar .widget_nav_menu .menu li a {
+color:#fff;
+padding:5px 0px
+}
+
+
+
+
+/* Main Home */
+
+/* Blog */
+
+.blog .sidebar h2 {
+	font-size: 18px;
+	color: #616063;
+}
+.blog .sidebar .widget {
+	margin-bottom: 20px;
+}
+
+.blog .entry-content img {
+float:left;
+margin-right:20px;
+margin-bottom:20px;	
+}
+
+.blog .vc_column_container {
+padding-left:15px;
+padding-right:15px;	
+}
+
+.blog .entry-meta {margin-top:5px; margin-bottom:10px;}
+
+
+.blog .entry-meta a, .blog .post-meta .icon { color:#3d1a54; }
+
+
+.blog .post-meta .icon {font-size:20px; height:auto; width:auto;}
+
+.blog .post-meta a, .blog .post-meta button, .blog .readmore-link {
+	
+color:#616063
+}
+.blog .media-left, .blog .media > .pull-left {
+  padding-right: 20px;
+}
+.blog .post-meta .icon {
+  font-size: 20px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 5px;
+  margin-top: -2px;
+  width: auto;
+}
+.blog .post-meta .icon:first-child {
+margin-left:0px;	
+}
+
+.ie9 .spotlight-slider .swiper-slide {
+	width:50%;
+}
+.alert.alert-cookie-policy {position:fixed; top:0px; left:0px; right:0px; padding:30px; z-index:10000; background:#dddddd; border-radius:0px; }
+.admin-bar .alert-cookie-policy {top:35px;}
+.alert-cookie-policy  h4 {margin-bottom:0px;}
+.alert-cookie-policy  a {color:#3d1a54; text-decoration:underline;}
+
+body.cookienotice{padding-top:100px;}
+body.cookienotice .site-header {top:100px !important}
+body.cookienotice .gateley-menu .dropdown-menu {
+	top:175px;
+}
+body.cookienotice.admin-bar {padding-top:135px;}
+body.cookienotice.admin-bar .site-header {top:135px !important}
+body.cookienotice.admin-bar .gateley-menu .dropdown-menu {
+	top:210px;
+}
+.loading {background:url(../img/loading.gif) no-repeat center center; height:100%; width:100%;}
+.page-id-2682 #wpfc-calendar-search {display:none !important;}
+
+
+
+.chrome.windows #menu-item-826 {margin-top:3px !important}
+.chrome.windows	#menu-item-275 {margin-top:25px !important}
+
+
+ svg { display: block;}
+  .investor a{
+	  color: #49a1d2;
+
+}
+.investor .btn.btn-primary {color:#fff;}
+ 
+ .menu-trigger {fill:#89d4d4 }
+.item .sector{transition:all .1s linear; fill: ; stroke:#111;}
+.item:hover text, .item:hover { text-decoration:none;}
+.svg-fallback, .no-svg .svg, .no-svg  .nosvg-hide {display:none;}
+
+.no-svg .svg-fallback {display:block;}
+.no-js body {opacity:1 !important;}
+
+body.main.home {opacity:0;}
+body.main.loaded.home, body.main.disclaimer1.home, body.main.disclaimer2.home {opacity:1;}
+.well.extra {padding:40px;}

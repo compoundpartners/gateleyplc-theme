@@ -1,0 +1,147 @@
+.fc-state-default.fc-corner-left {
+border-radius:0px;
+-webkit-border-radius:0px;
+}
+
+.fc-state-default.fc-corner-right {
+border-radius:0px;
+-webkit-border-radius:0px;
+}
+
+.fc button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: #ececec none repeat scroll 0 0;
+  border: 0 none;
+  height: 2.8em;
+  margin-right: 3px !important;
+  padding: 0 1em;
+}
+
+.fc-day-grid-event .fc-content {
+white-space:normal;
+}
+.fc-day-grid-event .fc-content .fc-title {font-size:10px !important; line-height:1.2;}
+.fc-day-grid-container {height:auto !important;}
+.fc button.fc-state-active, .fc button.fc-state-down {
+	background:#60c6c5;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15) inset, 0 0px 0px rgba(0, 0, 0, 0.05);
+	color:#fff;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+}
+.fc-day-grid-event {margin-bottom:5px !important;}
+.ui-widget-header {background:transparent}
+.fc-widget-header th, .ui-widget-header th{
+	background:#60c6c5;
+	padding:6px 8px;
+	color:#fff;
+}
+
+.fc-toolbar h2 {
+  color: #60c6c5;
+  font-size: 19px !important;
+}
+
+.fc td, .fc th {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 3px;
+
+}
+
+.fc-day.fc-other-month {background:#ececec}
+.fc-day {
+  background: #e0e0e0;
+}
+
+.eventmap {margin-right:10px; width:300px; height:200px; margin-bottom:20px;}
+.em-location-map-container {width:100% !important;height:100% !important;}
+
+.fc-unthemed .fc-today, .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background: #e1f4f4;
+  border:0px;
+}
+
+.ui-widget.ui-selectmenu-button {width:49% !important;}
+.fc-event {
+  background-color: transparent !important;
+  border: 0px solid transparent !important;
+  border-radius: 0px;
+  display: block;
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 1.3;
+  position: relative;
+}
+
+.bookings {background:#f0f0f0; margin-left:-40px; margin-right:-40px; padding: 40px; margin-bottom:-40px; margin-top:30px;}
+.fc-event, .fc-event:hover, .ui-widget .fc-event {
+color:#000 !important;
+}
+.fc-time {
+  display: none;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br, .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {border-radius:0px;}
+
+.sidebar .widget_visual_composer_addon .vc_row {margin-left:30px; margin-right:30px;}
+.sidebar .widget_visual_composer_addon .vc_row .clear  {margin-left:-15px; margin-right:-15px;}
+div.em-booking-login, .em-booking-form-details {
+width:100%;
+clear:both;
+margin:0px;
+border-left:0px none;
+border-top:1px solid #fff;
+margin-top:30px;
+}
+.bookings .input {width:100% ; background:#fff; border:0px; padding:5px;}
+
+/*
+ *
+ * THE EVENTS CALENDAR
+ *
+ */
+
+.tribe-events-sub-nav li::before, .tribe-events-sub-nav li  a span, .tribe-bar-views-list li::before, .tribe-events-notices li::before {display:none;}
+
+.tribe-events-sub-nav li{
+  line-height: 1.3;
+  margin-bottom: 4px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  position: relative;
+  margin-right:0px !important;
+}
+
+.tribe-events-sub-nav li  a{padding:8px 12px; background:#60c6c5; color:#fff ; display:block; margin-right:0px;}
+
+#tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type="submit"], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"], .tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"] > a {
+	background:#60c6c5;
+}
+
+#tribe-events-content .tribe-events-tooltip h4, #tribe_events_filters_wrapper .tribe_events_slider_val, .single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-ical {
+color:#60c6c5;
+}
+#tribe-events-content .cart {
+    margin: 0px -40px -20px !important;
+    background: #f0f0f0;
+    padding: 20px 40px 20px;
+}
+#tribe-events-content {margin-bottom:0px;}
+
+.sidebar .tribe-events-back {
+padding:0px 30px;
+}
+
+.page-template-events-page .paypal-button-content img, .page-template-events-page  .paypal-button-tag-content {display:none !important;}
+
+.page-template-events-page .paypal-button.paypal-style-checkout.paypal-color-gold .paypal-button-content {background:transparent;border-radius:0px !important; -webkit-border-radius:0px !important; color:#fff !important; text-shadow:none; font-size:16px !important; width:auto !important; line-height:27px !important;}
+
+#tribe-events-footer {display:none !important;}
+
+.financial-event {
+  margin-bottom: 30px;
+}
+
+.financial-event__date {
+  color:#60c6c5;
+  font-weight: bold;
+  margin-bottom: 5px;
+}

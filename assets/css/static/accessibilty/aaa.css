@@ -1,0 +1,40 @@
+.accessAAA .swiper-slide .badge, .accessAAA .pagination-inner .pagination-content, .accessAAA .thumbnail .caption {
+background:#3d1a54 !important;	
+}
+
+
+ .accessAAA  .absolute-feed .news-feed .media {
+	background:#000 !important;	
+ 
+ }
+ 
+  .accessAAA .spotlight  .btn-link,    .accessAAA .media-left .date-block-default .day  {
+	color:#3d1a54 !important;	
+ 
+ }
+ 
+  .accessAAA  .absolute-feed .news-feed .media-left .date-block-default .day,
+  .accessAAA  .absolute-feed .news-feed .media a,
+   .accessAAA .intro-block a, .absolute-feed .news-feed .media a {
+	 	color:#fff !important;	
+ 
+  }
+.accessAAA .pagination-inner .pagination-content, .accessAAA .thumbnail .caption {
+	background:rgba(61, 26, 84, 0.8) !important;
+}
+ .accessAAA .thumbnail .thumbnail-body.caption {
+	background:#fff !important;
+ }
+ .accessAAA .thumbnail.spotlight .caption {
+background:#fff !important;	 
+ }
+ 
+ .accessAAA  a,  .accessAAA .site-header .dropdown-menu  a {
+color:#3d1a54 !important;		 
+ } 
+ 
+ .accessAAA .site-footer a,  .accessAAA .feed-btn,  .accessAAA .site-header a , .accessAAA .pagination-content a,  .accessAAA .breadcrumb a{
+color:#fff !important;	 
+ }
+ 
+ .accessAA .gateley-office-list ,  .accessAAA .gateley-office-list {display:none;}

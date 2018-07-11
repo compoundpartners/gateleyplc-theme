@@ -1,0 +1,419 @@
+
+
+figure {
+	margin: 0;
+}
+img {
+	vertical-align: middle;
+}
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img, .content-inner img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.img-rounded {
+	border-radius: 6px;
+}
+.img-thumbnail {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	padding: 4px;
+	line-height: 1.42857143;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.img-circle {
+	border-radius: 50%;
+}
+
+/* 
+** Thumbsnail
+** Settings
+*/
+
+.thumbnail {
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	background-color: #fff;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
+}
+.thumbnail.spotlight {margin-bottom:5px;padding-bottom:12px}
+.gecko .thumbnail.spotlight {padding-bottom:15px}
+
+.thumbnail.spotlight hr, .media.media-person hr{margin:5px 0px;opacity:0.4;}
+
+.thumbnail.spotlight .media-heading {
+	min-height:40px;
+}
+.thumbnail.thumbnail-bordered {
+border:1px solid #ccc;
+}
+.thumbnail > img, .thumbnail a > img {
+	margin-right: auto;
+	margin-left: auto;
+}
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+	border-color: #60c6c5;
+}
+.thumbnail .caption {
+  color: #333;
+  padding: 9px 9px 0;
+}
+.thumbnail.thumbnail-overlay {padding:0px;position:relative; min-height:100px; margin-bottom:20px !important;}
+.thumbnail.thumbnail-overlay .caption {   
+ /*display: table-cell; 
+vertical-align: middle;
+    display: flex;*/
+  flex-direction: column;
+  justify-content: center; position:absolute; top:0px; bottom:0px; left:0px; right:0px; text-align:center;  color:#fff;
+  -webkit-transition: background 0.5s ease-in-out;
+-moz-transition: background 0.5s ease-in-out;
+-ms-transition: background 0.5s ease-in-out;
+-o-transition: background 0.5s ease-in-out;
+transition: background 0.5s ease-in-out;
+padding-top:25%;
+padding:25% 30px 30px;
+}
+.thumbnail.thumbnail-overlay a, .thumbnail.thumbnail-overlay .caption h2,  .thumbnail.thumbnail-overlay .caption h3 {color:#fff;}
+.thumbnail.thumbnail-overlay.no-col-set .caption { background:#49a1d2;background:rgba(73,161,210,0.8); }
+.thumbnail.thumbnail-overlay.no-col-set a:hover .caption {background:#49a1d2;}
+
+.ie7 .sidebar .swiper-slide, .ie6 .sidebar .swiper-slide {width:45%; display:inline-block; float:left;}
+.ie7 .sidebar .swiper-slide, .ie6 .sidebar .swiper-slide {
+	display:none;
+}
+.ie7 .sidebar .swiper-slide.slide-1, .ie6 .sidebar .swiper-slide.slide-1, .ie7 .sidebar .swiper-slide.slide-2, .ie6 .sidebar .swiper-slide.slide-2 {
+	display:block;
+}
+/* 
+** Media
+** Set Up
+*/
+
+
+
+.ie7 .media {display:block;}
+.ie7 .media-left,  .ie7 .media-right, .ie7 .media-body{display:inline-block;}
+.ie7 .media-left, .ie6 .media-left {display:none}
+.ie7 .media-body, .ie6 .media-body {width:80%; float:left;}
+a.media .media-body, .media.white .media-body {
+	padding: 8px 0px 3px 0px;
+}
+.media {
+	margin-top: 20px;
+	margin-bottom:10px;
+	position:relative;
+}
+
+.careers .media-body {
+  padding-left: 10px !important;
+}
+.media-left {
+  bottom: 0px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.media-body {
+  display: inline-block;
+  padding-left: 120px !important;
+  width: 100%;
+}
+.page-template-people-page .media-body, .page-template-people-page-version2 .media-body{
+  padding-left: 150px !important;
+
+}
+.page-template-jobroles-page .media-body {
+  padding-left: 100px !important;
+  padding-right: 10px !important;
+}
+.page-template-jobroles-page .careers .media{
+
+  min-height:120px;
+}
+.media.list .media-left {
+bottom:10px;
+	
+}
+.media.list .media-body {
+height:50px;	
+padding-left:70px !important;
+}
+
+.feed-wrapper .media-body, .breifings .media-body, .media-body.date-media, .financialevents .media-body
+ {
+  padding-left: 80px !important;
+
+}
+
+.financialevents.media {
+min-height:80px;	
+}
+.sidebar .list-item:last-child .media {border-bottom-color:transparent; margin-bottom:30px}
+
+.media.medialist {
+  margin-bottom: 20px;
+  min-height: 120px;
+}
+.media.medialist.event {
+	  min-height: 60px;
+
+}
+
+.breifing.sidebar .widget-title {display:none;}
+.media.media-person {
+
+  margin-right: 5px;
+  padding-right:15px;
+  min-height:112px;
+}
+.people .media-object{
+  display: block;
+  max-width: 120px;
+  height: auto;
+}
+
+.careers .media-object{
+  display: block;
+  max-width: 80px;
+  height: auto;
+}
+.media.medialist .media-body {padding-left:10px; padding-right:10px; padding-bottom:8px;}
+
+ .media.medialist .media-object {
+  display: block;
+  height: auto;
+  max-width: 112px;
+}
+
+ .media.medialist .media-left{padding-right:0px;}
+ 
+ 
+.people .media-left, .people .media > .pull-left {
+	padding-right:15px;
+}
+.search-results .media-left {
+	padding-right:10px;	
+}
+.search-results .media {
+border:1px solid #e2e2e2;
+min-height:100px;	
+}
+.search-results .media-object {
+  display: block;
+  height: auto;
+  max-width: 100px;
+}
+
+.media-factblock {
+	background:#f0f0f0;
+}
+
+.media.list .media-object  {
+  max-width: 60px;
+  height: auto;
+}
+
+.media.media-office.medialist .media-object {
+  display: block;
+  height: auto;
+  max-width: 160px;
+}
+
+
+.media-factblock .media-body {padding:20px 10px;}
+
+.media-factblock .arrow {
+  background: rgba(0, 0, 0, 0) url("../img/investor-purple-arrow.png") no-repeat scroll right center;
+  bottom: 0;
+  position: absolute;
+  right: -40px;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 40px;
+  background-size: 100% 100%;
+}
+
+.investor .media h4 {
+  min-height: 40px;
+}
+.search .media .media-body {padding-right:10px;}
+
+
+.media-body a, a .media-body {color:#616063;
+}
+
+.media-factblock .media-body p {
+	margin-bottom:0px;
+	font-size:15px;}
+.media-object.media-object-percentage {
+  background: #2f1a45 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 30px;
+  margin-right: 40px;
+  min-height: 105px;
+  padding: 30% 0 25px 10px;
+  position: relative;
+}
+
+
+.media:first-child {
+	margin-top: 0;
+}
+.media, .media-body {
+	zoom: 1;
+}
+.media.deactive {background:#d7d7d7;}
+.media-body.no-image {padding:10px !important;}
+.media-body {
+	width: 10000px;
+}
+.sidebar .media-careers h4 {
+	 font-size:16px;}
+
+.sidebar .media.media-careers img {
+  height: auto;
+  max-width: 100px;
+}
+
+
+
+.sidebar .media.media-careers hr {margin:8px 15px 8px 0px;}
+
+
+.media-object {
+	display: block;
+}
+.media-object.img-thumbnail {
+	max-width: none;
+}
+.media-right, .media > .pull-right {
+	padding-left: 10px;
+}
+.media-left, .media > .pull-left {
+	padding-right: 10px;
+}
+.media-left .placeholder-block {
+  background: #d0d0d0 none repeat scroll 0 0;
+  color: #777;
+  padding: 54px;
+}
+.sidebar .media-left .placeholder-block {background:#fff; }
+
+.sidebar .media-left .placeholder-block .icon {
+color:#dadbde;	
+}
+
+
+.media-left .placeholder-block.placeholder-small {
+padding: 10px;
+
+}
+
+.media-left .placeholder-block.placeholder-small .icon {
+font-size:25px;
+width:25px; height:25px;	
+}
+.media-left .placeholder-block .icon {
+font-size:40px;
+height:40px; width:40px;	
+}
+.media-left .date-block {
+  background: #3d1a54 none repeat scroll 0 0;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.date-block-default {
+background:transparent;
+text-align:center;	
+}
+.media-left .date-block-default .day {
+
+color:#60c6c5;
+}
+
+.media-left .day {
+  font-size: 40px;
+  display:block;
+  line-height:1;
+    color: #ffffff;
+	
+}
+
+.media-left .month {
+  color: #f0f0f0;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height:1;
+  display:block;
+  text-align:center;
+}
+
+.media-left .year {
+  color: #f0f0f0;
+  font-size: 19px;
+  text-transform: uppercase;
+  line-height:1;
+  display:block;
+  text-align:center;
+}
+
+.media-left .date-block-default .month{
+  color:#999999;
+}
+
+
+.media.list h5 {
+	margin-top:0px;
+}
+.media-left, .media-right, .media-body {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.media-middle {
+	vertical-align: middle;
+}
+.media-bottom {
+	vertical-align: bottom;
+}
+.media-heading {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.media-list {
+	padding-left: 0;
+	list-style: none;
+}
+.media.list {
+  display: block;
+  min-height: 60px;
+}
+.media.list .media-left .cover {
+  background: transparent;
+  bottom: -10px;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.media h4{ color:#000}
+.page-template-people-page .people .media, .page-template-people-page-version2 .media-body  {
+min-height:140px;
+}
+.page-template-people-page-version2 .media {
+margin-bottom:20px !important;
+}

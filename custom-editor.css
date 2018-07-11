@@ -1,0 +1,34 @@
+
+body {
+margin:0px;   border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+  border-top:1px solid #ccc;
+   height:100%;
+   height:100vh;
+padding:20px;
+}
+
+.content-col-main {
+   float:left;
+   width:66%;
+   padding:1%;
+   border: 1px dotted #ccc;
+   background: #fff;
+}
+
+.content-col-side {
+   float:right;
+   width:29%;
+   padding:1%;
+   border: 1px dotted #ccc;
+   background: #fff;
+}
+
+img { /* Makes sure your images stay within their columns */
+   max-width: 100%;
+   width: auto;
+   height: auto;
+}
+.brick {background:#fff; border:1px dotted #ccc}
+
+.wp-switch-editor switch-tmce, .postContent-html, .wp-switch-editor {height:27px;}

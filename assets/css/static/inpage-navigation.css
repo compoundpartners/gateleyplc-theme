@@ -1,0 +1,162 @@
+/* 
+** Breadcrumb
+** Navigation
+*/
+
+
+.breadcrumb {
+	padding: 8px 15px;
+	margin-bottom: 10px;
+	list-style: none;
+	float:right;
+	width:auto;
+	display:inline-block;
+	margin-top:10px;
+}
+.investor-page-header .breadcrumb {
+float:left;	
+}
+.breadcrumb > li {
+	display: inline-block;
+}
+.breadcrumb > li + li:before {
+	padding: 0px 5px 0px 10px;
+	color: #eee;
+	content: "/\00a0";
+}
+.page-header .breadcrumb > .active, .breadcrumb li {
+	color: #fff;
+}
+
+
+.investor-page-header  .page-header .breadcrumb > .active, .investor-page-header .breadcrumb li {
+	color: #616063;
+}
+.page-header .breadcrumb li {font-size:16px;}
+.page-header .breadcrumb li a {color:#baebec; color:rgba(255,255,255,0.6)}
+
+
+.investor-page-header .breadcrumb > .active, .investor-page-header  .breadcrumb li {
+	color:#616063;
+}
+
+.investor-page-header .breadcrumb li a {color: #49a1d2;}
+
+
+
+/* 
+** Pagination
+** Navigation
+*/
+.pagination-wrap {margin-top:30px;}
+.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 20px 0;
+	border-radius: 4px;
+}
+.pagination > li {
+	display: inline;
+	flaot:left;
+	margin:0px !important;
+	padding:0px !important;
+}
+ul.pagination li::before, .content-inner ul.pagination li::before {
+display:none;	
+}
+.pagination > li > a, .pagination > li > span {
+	position: relative;
+	float: left;
+	padding: 10px 16px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #475055;
+	text-decoration: none;
+	background-color:#f4f4f4;
+	margin-top:4px;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+	margin-left: 0;
+	
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+	
+}
+	
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pagination > li > span.current, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus  {
+	z-index: 2;
+	color: #fff;
+	cursor: default;
+	background-color: #60c6c5;
+	border-color: #60c6c5;
+}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+	color: #777;
+	cursor: not-allowed;
+	background-color: #fff;
+	border-color: #ddd;
+}
+.pagination-lg > li > a, .pagination-lg > li > span {
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+}
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a, .pagination-lg > li:last-child > span {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.pagination-sm > li > a, .pagination-sm > li > span {
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.pager {
+	padding-left: 0;
+	margin: 20px 0;
+	text-align: center;
+	list-style: none;
+}
+.pager li {
+	display: inline;
+}
+.pager li > a, .pager li > span {
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+}
+.pager li > a:hover, .pager li > a:focus {
+	text-decoration: none;
+	background-color: #eee;
+}
+.pager .next > a, .pager .next > span {
+	float: right;
+}
+.pager .previous > a, .pager .previous > span {
+	float: left;
+}
+.pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span {
+	color: #777;
+	cursor: not-allowed;
+	background-color: #fff;
+}
+.blog .sidebar .widget_nav_menu .menu li a {
+  background: #fff none repeat scroll 0 0;
+  color: #7a7a7c;
+  padding: 5px 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

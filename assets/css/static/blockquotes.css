@@ -1,0 +1,86 @@
+/*
+** Quotes
+** Statements
+
+blockquote {
+	padding: 20px 30px;
+	margin: 0 0 20px;
+	font-size: 17.5px;
+	border: 2px solid #eee;
+	position: relative;
+	background: #fff;
+	margin-bottom:30px;
+	float:left;
+	font-size:24px;
+	color:#60c6c5;
+	width:100%;
+}*/
+
+
+blockquote {
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid #eee;
+  color: #60c6c5;
+  float: left;
+  font-size: 17px;
+  margin: 0 0 30px;
+  padding: 20px 30px;
+  position: relative;
+  width: 100%;
+}
+.icon-block {display:inline-block; width:80px; float:left;}
+.blockquote-content {display:inline-block; width:calc(100% - 80px)}
+
+ .single-people blockquote {
+font-size:24px;	 
+ }
+blockquote .icon {color:#ccc;}
+blockquote:after, blockquote:before {
+	top: 100%;
+	left: 40px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+blockquote:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+blockquote:before {
+	border-color: rgba(238, 238, 238, 0);
+	border-top-color: #eee;
+	border-width: 23px;
+	margin-left: -23px;
+}
+
+blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
+	margin-bottom: 0;
+}
+blockquote footer, blockquote small, blockquote .small {
+	display: block;
+	font-size: 80%;
+	line-height: 1.42857143;
+	color: #777;
+}
+blockquote footer:before, blockquote small:before, blockquote .small:before {
+	content: '\2014 \00A0';
+}
+.blockquote-reverse, blockquote.pull-right {
+	padding-right: 15px;
+	padding-left: 0;
+	text-align: right;
+	border-right: 5px solid #eee;
+	border-left: 0;
+}
+.blockquote-reverse footer:before, blockquote.pull-right footer:before, .blockquote-reverse small:before, blockquote.pull-right small:before, .blockquote-reverse .small:before, blockquote.pull-right .small:before {
+	content: '';
+}
+.blockquote-reverse footer:after, blockquote.pull-right footer:after, .blockquote-reverse small:after, blockquote.pull-right small:after, .blockquote-reverse .small:after, blockquote.pull-right .small:after {
+	content: '\00A0 \2014';
+}

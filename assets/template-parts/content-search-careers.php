@@ -1,0 +1,90 @@
+<?php
+/**
+ * Template part for displaying results in search pages.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package gateley-plc
+ */
+?>
+
+<article id="career-thumb-<?php the_ID(); ?>" class=" vc_col-md-6 vc_col-sm-6 <?php echo get_post_type() ;?>">
+     <a class="media ajax-popup-link matchHeight" href="<?php echo home_url(); ?>/popup/?id=<?php echo get_the_ID(); ?>&pt=careers">
+     
+ 
+
+     <div class="media-left">
+	<?php
+
+// load all 'category' terms for the post
+$terms = get_the_terms( get_the_ID(), 'gateley_plc_us_location');
+
+
+// we will use the first term to load ACF data from
+if( !empty($terms) ) {
+	
+	$term = array_pop($terms);
+
+	$image_id = get_field('taxonomy_image', $term );
+
+	// do something with $custom_field
+}
+?>
+	 <?php echo wp_get_attachment_image( $image_id, 'thumbnail', "", array('class'=> 'media-object invisible') ); ?>
+     </div>
+     <div class="media-body ">
+          <header class="entry-header">
+               <?php echo "<h3 class='entry-title'>".get_the_title()."</h3>"; ?>
+          </header>
+          <!-- .entry-header -->
+          
+          <div class="entry-summary">
+               <?php 
+		if ('people' == get_post_type() ) {
+echo '<h5>'.get_post_meta($post->ID, '_jobRole', true).'</h5>';
+$dep= get_post_meta($post->ID, '_careerDepartment', true);
+if(!empty($dep)) {
+echo ' <strong>Department:</strong> '.get_post_meta($post->ID, '_careerDepartment', true);
+}
+echo '<ul class="contact-list">';
+
+$terms = wp_get_post_terms($post->ID, 'gateley_plc_us_location', array("fields" => "names"));
+ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+                             echo ' <li>
+                                   <strong>Location:</strong> ';
+               
+
+	 $looping = 1;
+	 $countingterms = count($terms);
+     foreach ( $terms as $term ) {
+        echo  $term." ";
+	  
+	 // if( $countingterms  > 1) { $output .= ', '; }
+	  $looping++;
+        
+     }
+
+ echo "</li>";
+  }
+				   
+						 if( get_post_meta($post->ID, '_careerNumber', true)) {
+                             echo ' <li><strong>Tel:</strong>';
+                                   echo get_post_meta($post->ID, '_careerNumber', true) .'</li>';
+                              }  echo  '</ul>';
+}?>
+          </div>
+          <!-- .entry-summary -->
+     </div>
+     </a>
+</article>
+<?php /*
+echo'<div id="career-'.get_the_ID().'" class="white-popup-block mfp-hide animated">';
+
+ 
+      			get_template_part( 'assets/template-parts/popup/content', 'popup-people');
+
+echo '</div>';
+*/
+$thumb = wp_get_attachment_image_src( $image_id, 'large', false );
+$url = $thumb['0'];
+$GLOBALS['styles'] .= "#career-thumb-".get_the_ID()." .media-left{ background:url(".$url."); background-size:cover; background-position:center center;}"; ?>

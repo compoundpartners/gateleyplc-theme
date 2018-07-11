@@ -1,0 +1,10 @@
+.blog-signup-footer__text {
+  display: inline-block;
+  width: calc(100% - 110px); }
+
+.blog-signup-footer__button-div {
+  display: inline-block; }
+
+.blog-signup-footer__button-link {
+  margin-left: 10px;
+  width: 100px; }

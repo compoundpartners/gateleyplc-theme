@@ -1,0 +1,16 @@
+.wpb_carouselitem .vc_element-icon, .wpb_carousel .vc_element-icon {display:none;}
+
+
+.wpb_carousel.vc_shortcodes_container {
+  background: #e6e6e6 none repeat scroll 0 0;
+  border: 2px dashed #fff;
+  padding: 5px;
+  outline: 5px solid #e6e6e6 ;
+  margin: 5px;
+}
+.wpb_carousel.vc_shortcodes_container > .wpb_element_wrapper > .vc_container_for_children {
+margin-left:10px;	
+}
+
+.wpb_carousel.vc_shortcodes_container  .vc_controls {padding-bottom:10px; color:#fff;}
+
