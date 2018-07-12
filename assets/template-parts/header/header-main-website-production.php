@@ -90,140 +90,97 @@ if(!empty(get_theme_mod("gateley_plc_ie6_logo"))) {
 
                                         </div>
 
-<!--
 
 
 
 
 
 
-                                        <?php if(get_theme_mod("gateley_capitas_show_menu_logo") == 1) { ?>
-                                        <div class="<?php if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
- vc_col-sm-4 vc_col-xs-12 <?php } else { ?> columns-12<?php } ?><?php if(empty($cols)) { ?>mt10 <?php }?>">
-                                        <?php if(!empty(get_theme_mod("gateley_capitas_menu_logo"))) {
-							if(!empty(get_theme_mod("gateley_capitas_menu_logo_class"))) { $logoclass2 = get_theme_mod("gateley_capitas_menu_logo_class"); } else { $logoclass2= '';}
-if(!empty(get_theme_mod("gateley_capitas_menu_logo_link"))) {
-	 echo "<h5><a href='".get_theme_mod("gateley_capitas_menu_logo_link")."'>";
- }
+        <div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
+          <h5>
+            <a href="https://gateleycapitus.com/">
+            <img src="/wp-content/themes/gateley-plc/assets/img/Gateley-Capitus-Logo.png" alt="Entrust Logo" class="  menu-logo menu-logo__foot gateley-capitas">
+            <span class="location-text"><small>Fiscal Incentives Consultancy</small></span>
+            </a>
+          </h5>
+        </div>
+
+        <div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
+          <h5>
+            <a href="https://www.gateleyhamer.com">
+              <img src="/wp-content/themes/gateley-plc/assets/img/gateley-hamer.png" alt="Gateley Hamer Logo" class="  menu-logo menu-logo__foot gateley-capitas">
+              <span class="location-text"><small>Specialist Property Consultancy</small></span>
+            </a>
+          </h5>
+        </div>
+
+        <div class=" vc_col-sm-2 vc_col-xs-12 mt10 ">
+          <h5>
+            <a href="http://www.entrustpension.com/">
+              <img src="/wp-content/themes/gateley-plc/assets/img/Entrust-logo-linear_428x70.png" alt="Entrust Logo" class="  menu-logo menu-logo__foot ">
+              <span class="location-text"><small>Professional Trustee Company</small></span>
+            </a>
+          </h5>
+        </div>
+
+        <div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
+          <h5>
+            <a href="https://www.kiddyandpartners.com/" target="_blank">
+              <img src="/wp-content/themes/gateley-plc/assets/img/kiddy_and_partners_logo.png" alt="Kiddy And Partners Logo" class="menu-logo menu-logo__foot ">
+              <span class="location-text"><small>Human Capital Business</small></span>
+            </a>
+          </h5>
+        </div>
 
 
-           echo "<img src='".get_theme_mod("gateley_capitas_menu_logo")."' alt='". $alt2text . " Logo' class='  menu-logo menu-logo__foot ".$logoclass2."'/><span class='location-text'><small>". get_theme_mod("gateley_capitas_menu_logo_text")."</small></span>"; }
-             if(!empty(get_theme_mod("gateley_capitas_menu_logo_link"))) {
-	 echo "</a></h5>";
- }
-      ?>                                        <?php dynamic_sidebar( 'mega-menu-split-capitas' ); ?>
-                                        </div>
-                                        <?php } ?>
+      </li>
+    </ul>
+  </li>
 
-                                             <?php if(get_theme_mod("gateley_wires_show_menu_logo") == 1) { ?>
+<?php } ?>
 
-                                        <div class="<?php if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
- vc_col-sm-4 vc_col-xs-12 <?php } else { ?> columns-12<?php } ?><?php if(empty($cols)) { ?>mt10 <?php }?>">
-                                        <?php if(!empty(get_theme_mod("gateley_capitas_menu_logo"))) {
-	 echo "<h5><a href='https://www.gateleyhamer.com'>";
+<li class="dropdown gateley-menu-fw">
+  <a href="https://investors.gateleyplc.com/"><span class="hidden-xs">Investors</span></a>
+</li>
 
+<?php  if(get_option('showsocialmenu') !== 'no') { ?>
 
+  <!-- Social Menu-->
 
-           echo "<img src='".get_template_directory_uri()."/assets/img/gateley-hamer.png' alt='Gateley Hamer Logo' class='  menu-logo menu-logo__foot ".$logoclass2."'/><span class='location-text'><small>Specialist Property Consultancy</small></span>"; }
-	 echo "</a></h5>";
+  <!--
 
-      ?>                                        <?php dynamic_sidebar( 'mega-menu-split-wires' ); ?>
-                                        </div>
-                                        <?php } ?>
+  <li class="dropdown gateley-menu-fw">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-share menu-icon"></i> <span class="sep hidden-xs">|</span> <span class="hidden-xs">Social</span></a>
+    <ul class="dropdown-menu">
+      <li class="container">
 
+        <?php if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
+          <div class="vc_row">
+        <?php } ?>
 
-                                          <div class="<?php   if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
- vc_col-sm-4 vc_col-xs-12 <?php } else { ?> columns-12<?php } ?><?php if(empty($cols)) { ?>mt10 <?php }?>">
-                                        <?php if(!empty(get_theme_mod("gateley_hbj_menu_logo"))) {
-							if(!empty(get_theme_mod("gateley_hbj_menu_logo_class"))) { $logoclass2 = get_theme_mod("gateley_hbj_menu_logo_class"); } else { $logoclass2= '';}
-if(!empty(get_theme_mod("gateley_hbj_menu_logo_link"))) {
-	 echo "<h5><a href='".get_theme_mod("gateley_hbj_menu_logo_link")."'>";
- }
+          <div class="<?php if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?> vc_col-sm-5 vc_col-xs-12 <?php } else { ?> columns-5<?php } ?>">
+            <h5>Stay connected using our social channels</h5>
+          </div>
 
+          <div class="<?php if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?> vc_col-sm-7 vc_col-xs-12 <?php } else { ?> columns-5<?php } ?>">
+            <?php dynamic_sidebar( 'social-mega-menu-cols' ); ?>
+          </div>
 
-           echo "<img src='".get_theme_mod("gateley_hbj_menu_logo")."' alt='". $alt2text . " Logo' class='  menu-logo menu-logo__foot ".$logoclass2."'/><span class='location-text'>". $localt2text."</span>"; }
-             if(!empty(get_theme_mod("gateley_hbj_menu_logo_link"))) {
-	 echo "</a></h5>";
- }
-      ?>                                        <?php dynamic_sidebar( 'mega-menu-split-hbj' ); ?>
-                                        </div>
-                                                                        <?php   if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
-</div><?php } ?>
+        <?php if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
+          </div>
+        <?php } ?>
 
+      </li>
+    </ul>
+  </li>
 
 -->
 
-<div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
-  <h5>
-    <a href="https://gateleycapitus.com/">
-    <img src="/wp-content/themes/gateley-plc/assets/img/Gateley-Capitus-Logo.png" alt="Entrust Logo" class="  menu-logo menu-logo__foot gateley-capitas">
-    <span class="location-text"><small>Fiscal Incentives Consultancy</small></span>
-    </a>
-  </h5>
-</div>
-
-<div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
-  <h5>
-    <a href="https://www.gateleyhamer.com">
-      <img src="/wp-content/themes/gateley-plc/assets/img/gateley-hamer.png" alt="Gateley Hamer Logo" class="  menu-logo menu-logo__foot gateley-capitas">
-      <span class="location-text"><small>Specialist Property Consultancy</small></span>
-    </a>
-  </h5>
-</div>
-
-<div class=" vc_col-sm-2 vc_col-xs-12 mt10 ">
-  <h5>
-    <a href="http://www.entrustpension.com/">
-      <img src="/wp-content/themes/gateley-plc/assets/img/Entrust-logo-linear_428x70.png" alt="Entrust Logo" class="  menu-logo menu-logo__foot ">
-      <span class="location-text"><small>Professional Trustee Company</small></span>
-    </a>
-  </h5>
-</div>
-
-<div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
-  <h5>
-    <a href="https://www.kiddyandpartners.com/" target="_blank">
-      <img src="/wp-content/themes/gateley-plc/assets/img/kiddy_and_partners_logo.png" alt="Kiddy And Partners Logo" class="menu-logo menu-logo__foot ">
-      <span class="location-text"><small>Human Capital Business</small></span>
-    </a>
-  </h5>
-</div>
-
-
-                              </li>
-                         </ul>
-                    </li>
-                    <?php } ?>
-                  <?php  if(get_option('showsocialmenu') !== 'no') { ?>
-                 <!-- Social Menu-->
-                    <li class="dropdown gateley-menu-fw">
-                         <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-share menu-icon"></i> <span class="sep hidden-xs">|</span> <span class="hidden-xs">Social</span></a>
-                         <ul class="dropdown-menu">
-
-                              <li class="container">
-                              <?php   if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
-                                   <div class="vc_row">
-                                   <?php } ?>
-                                       <div class="<?php   if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
-vc_col-sm-5 vc_col-xs-12 <?php } else { ?> columns-5<?php } ?>">
-									<h5>
- Stay connected using our social channels</h5>
-                                        </div>
-                                       <div class="<?php   if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
-vc_col-sm-7 vc_col-xs-12 <?php } else { ?> columns-5<?php } ?>">
-                                        <?php dynamic_sidebar( 'social-mega-menu-cols' ); ?>
-                                          </div>
-                                                                        <?php   if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
-
-                                   </div>
 <?php } ?>
-                              </li>
-                         </ul>
-                    </li>
-                    <?php } ?>
-                   <?php  if(get_option('showsearchmenu') !== 'no') { ?>
 
-                    <!-- Search Menu-->
+<?php if(get_option('showsearchmenu') !== 'no') { ?>
+
+  <!-- Search Menu-->
                     <li class="dropdown gateley-menu-fw">
                          <a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="icon-search menu-icon"></i> <span class="sep hidden-xs">|</span> <span class="hidden-xs">Search</span></a>
                          <ul class="dropdown-menu">
