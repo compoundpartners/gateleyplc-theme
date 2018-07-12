@@ -184,7 +184,7 @@ if(!empty(get_theme_mod("gateley_hbj_menu_logo_link"))) {
   <h5>
     <a href="https://www.kiddyandpartners.com/" target="_blank">
       <img src="/wp-content/themes/gateley-plc/assets/img/kiddy_and_partners_logo.png" alt="Kiddy And Partners Logo" class="menu-logo menu-logo__foot ">
-      <span class="location-text"><small>Human Capital business</small></span>
+      <span class="location-text"><small>Human Capital Business</small></span>
     </a>
   </h5>
 </div>
