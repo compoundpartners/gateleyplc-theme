@@ -171,7 +171,7 @@ if(!empty(get_theme_mod("gateley_hbj_menu_logo_link"))) {
   </h5>
 </div>
 
-<div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
+<div class=" vc_col-sm-2 vc_col-xs-12 mt10 ">
   <h5>
     <a href="http://www.entrustpension.com/">
       <img src="/wp-content/themes/gateley-plc/assets/img/Entrust-logo-linear_428x70.png" alt="Entrust Logo" class="  menu-logo menu-logo__foot ">
