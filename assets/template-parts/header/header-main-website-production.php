@@ -87,7 +87,16 @@ if(!empty(get_theme_mod("gateley_plc_ie6_logo"))) {
 
                                              <?php dynamic_sidebar( 'mega-menu-split-gateley' ); ?>
                                             </div>
+
                                         </div>
+
+<!--
+
+
+
+
+
+
                                         <?php if(get_theme_mod("gateley_capitas_show_menu_logo") == 1) { ?>
                                         <div class="<?php if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
  vc_col-sm-4 vc_col-xs-12 <?php } else { ?> columns-12<?php } ?><?php if(empty($cols)) { ?>mt10 <?php }?>">
@@ -140,6 +149,47 @@ if(!empty(get_theme_mod("gateley_hbj_menu_logo_link"))) {
                                         </div>
                                                                         <?php   if(!preg_match('/(?i)msie [5-7]/',$_SERVER['HTTP_USER_AGENT'])){ ?>
 </div><?php } ?>
+
+
+-->
+
+<div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
+  <h5>
+    <a href="https://gateleycapitus.com/">
+    <img src="/wp-content/themes/gateley-plc/assets/img/Gateley-Capitus-Logo.png" alt="Entrust Logo" class="  menu-logo menu-logo__foot gateley-capitas">
+    <span class="location-text"><small>Fiscal Incentives Consultancy</small></span>
+    </a>
+  </h5>
+</div>
+
+<div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
+  <h5>
+    <a href="https://www.gateleyhamer.com">
+      <img src="/wp-content/themes/gateley-plc/assets/img/gateley-hamer.png" alt="Gateley Hamer Logo" class="  menu-logo menu-logo__foot gateley-capitas">
+      <span class="location-text"><small>Specialist Property Consultancy</small></span>
+    </a>
+  </h5>
+</div>
+
+<div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
+  <h5>
+    <a href="http://www.entrustpension.com/">
+      <img src="/wp-content/themes/gateley-plc/assets/img/Entrust-logo-linear_428x70.png" alt="Entrust Logo" class="  menu-logo menu-logo__foot ">
+      <span class="location-text"><small>Professional Trustee Company</small></span>
+    </a>
+  </h5>
+</div>
+
+<div class=" vc_col-sm-3 vc_col-xs-12 mt10 ">
+  <h5>
+    <a href="https://www.kiddyandpartners.com/" target="_blank">
+      <img src="/wp-content/themes/gateley-plc/assets/img/kiddy_and_partners_logo.png" alt="Kiddy And Partners Logo" class="menu-logo menu-logo__foot ">
+      <span class="location-text"><small>Human Capital business</small></span>
+    </a>
+  </h5>
+</div>
+
+
                               </li>
                          </ul>
                     </li>
