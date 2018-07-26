@@ -1,155 +1,162 @@
 <?php
 /* ======== ======== ======== ======== ======== ======== */
-/* Twitter									  */	
+/* Twitter									  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/twitter-module.php';
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/tweets-module.php';
 
 /* ======== ======== ======== ======== ======== ======== */
-/* Blog Feed									  */	
+/* Blog Feed									  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/rss-blog-feed-module.php';
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/network-blog-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Call to action									  */	
+/* Call to action									  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/call-to-action.php';
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/link-container-module.php';
 
 /* ======== ======== ======== ======== ======== ======== */
-/* Spotlight Feed								  */	
+/* Spotlight Feed								  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/spotlight-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Search Form    								  */	
+/* Search Form    								  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/searchform-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* SubPage Grid    								  */	
+/* SubPage Grid    								  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/subpage-grid-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Latest News Module							  */	
+/* Latest News Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/latest-news-grid-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Publications Module							  */	
+/* Publications Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/publications-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Publications Module							  */	
+/* Publications Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/financialevents-module.php';
 /* ======== ======== ======== ======== ======== ======== */
 
-/* Carousel Module							  */	
+/* Carousel Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/carousel-module.php';
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/carousel-image-module.php';
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/carousel-testimonial-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Carousel Module							  */	
+/* Carousel Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/breadcrumb-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* PageHeader Module							  */	
+/* PageHeader Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/page-header-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Page Block Module							  */	
+/* Page Block Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/pageblock.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Thumbnail Module							  */	
+/* Thumbnail Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/thumbnail-block.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Page Block Module							  */	
+/* Page Block Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/serviceblock-module.php';
 
 /* ======== ======== ======== ======== ======== ======== */
-/* Link Block Module							  */	
+/* Link Block Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/linkblockbuilder-module.php';
 /* ======== ======== ======== ======== ======== ======== */
-/* Page Block Module							  */	
+/* Page Block Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/network-sites-module.php';
 
-/* Contact Slider						  */	
+/* Contact Slider						  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/contact-slider-module.php';
 
 
-/* Timeline					  */	
+/* Timeline					  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/timeline-module.php';
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/timelineitem-module.php';
 
 
-/* Circle Nav					  */	
+/* Circle Nav					  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/circle-navigation-module.php';
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/circlenavitem-module.php';
 
 
-/* Contact Slider						  */	
+/* Contact Slider						  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/sitemap-module.php';
 
-/* Accessibility					  */	
+/* Accessibility					  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/accessibility-module.php';
 
 
 
-/* Accessibility					  */	
+/* Accessibility					  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/paginated-news-module.php';
 
 
+/* Accessibility					  */
+/* ======== ======== ======== ======== ======== ======== */
+require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/paginated-corporate-deals-module.php';
+require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/paginated-talking-matters-module.php';
+require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/paginated-talking-trainees-module.php';
+require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/paginated-housebuilder-markets-module.php';
 
-/* Network Feed Module					  */	
+
+/* Network Feed Module					  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/network-feed-module.php';
 
-/* Related Module					  */	
+/* Related Module					  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/related-module.php';
 
 
 
 /* ======== ======== ======== ======== ======== ======== */
-/* Clearfix									  */	
+/* Clearfix									  */
 /* ======== ======== ======== ======== ======== ======== */
-function clearfix_shortcode($atts, $content = null) {  
-extract(shortcode_atts(array( 
+function clearfix_shortcode($atts, $content = null) {
+extract(shortcode_atts(array(
 "id" => 'id',
 ), $atts));
 if ($class == 'addtop') { $classname = "add-top"; } ;
 return '<div class="clear clr clearfix"></div>';
 }
-add_shortcode('clearfix', 'clearfix_shortcode'); 
+add_shortcode('clearfix', 'clearfix_shortcode');
 
 
-// COLLAPSE 
-function collapse_shortcode($atts, $content = null) {  
-extract(shortcode_atts(array(  
-"ID" => 'ID',  
-), $atts));  
+// COLLAPSE
+function collapse_shortcode($atts, $content = null) {
+extract(shortcode_atts(array(
+"ID" => 'ID',
+), $atts));
 
 return '<section class="accordion" id="'. esc_attr($ID) .'">  '.do_shortcode("$content").'
 </section>';
 }
-add_shortcode('collapse', 'collapse_shortcode'); 
+add_shortcode('collapse', 'collapse_shortcode');
 
-function collapse_group_shortcode($atts, $content = null) {  
-extract(shortcode_atts(array(  
-"ID" => 'ID', 
+function collapse_group_shortcode($atts, $content = null) {
+extract(shortcode_atts(array(
+"ID" => 'ID',
 "title" => 'title',
-"number" => 'number', 
-), $atts));  
+"number" => 'number',
+), $atts));
 
 return '<div class="accordion-group">
 <div class="accordion-heading">
@@ -165,15 +172,15 @@ return '<div class="accordion-group">
 </div>';
 
 }
-add_shortcode('collapsegroup', 'collapse_group_shortcode'); 
+add_shortcode('collapsegroup', 'collapse_group_shortcode');
 
 // BUTTON
 
-function button_shortcode($atts, $content = null) {  
-extract(shortcode_atts(array(  
+function button_shortcode($atts, $content = null) {
+extract(shortcode_atts(array(
 "link" => 'link',
-"datatoggle" => 'datatoggle',  
-), $atts));  
+"datatoggle" => 'datatoggle',
+), $atts));
 
 return '<a class="btn" role="button" href="'. esc_attr($link) .'" data-toggle="'. esc_attr($datatoggle) .'">  '.$content.'
 </a>';
@@ -182,52 +189,52 @@ return '<a class="btn" role="button" href="'. esc_attr($link) .'" data-toggle="'
 add_shortcode('button', 'button_shortcode');
 
 // TABS
-function tab_nav_shortcode($atts, $content = null) {  
-extract(shortcode_atts(array(  
-"link" => 'link', 
-"active" => '',  
+function tab_nav_shortcode($atts, $content = null) {
+extract(shortcode_atts(array(
+"link" => 'link',
+"active" => '',
 
-), $atts));  
+), $atts));
 
 return '<ul class="nav nav-tabs  ">'.do_shortcode("$content").'</ul>';
 
 }
-add_shortcode('tab_nav', 'tab_nav_shortcode'); 
+add_shortcode('tab_nav', 'tab_nav_shortcode');
 
-function tab_inner_shortcode($atts, $content = null) {  
-extract(shortcode_atts(array(  
-"link" => 'link',  
-"active" => '',  
+function tab_inner_shortcode($atts, $content = null) {
+extract(shortcode_atts(array(
+"link" => 'link',
+"active" => '',
 
-), $atts));  
+), $atts));
 
 return '<li class="'.$active.'"><a href="'.$link.'" data-toggle="tab">'.$content.'</a></li>';
 
 }
-add_shortcode('tab_inner', 'tab_inner_shortcode'); 
+add_shortcode('tab_inner', 'tab_inner_shortcode');
 
 // TABS CONTENT
 
-function tab_content_shortcode($atts, $content = null) {  
-extract(shortcode_atts(array(  
-"link" => 'link',  
-), $atts));  
+function tab_content_shortcode($atts, $content = null) {
+extract(shortcode_atts(array(
+"link" => 'link',
+), $atts));
 
 return '<div class="tab-content">'.do_shortcode("$content").'</div>';
 
 }
-add_shortcode('tab_content', 'tab_content_shortcode'); 
+add_shortcode('tab_content', 'tab_content_shortcode');
 
-function tab_pane_shortcode($atts, $content = null) {  
-extract(shortcode_atts(array(  
-"id" => 'id',  
-"active" => '',  
-), $atts));  
+function tab_pane_shortcode($atts, $content = null) {
+extract(shortcode_atts(array(
+"id" => 'id',
+"active" => '',
+), $atts));
 
 return '<div class="tab-pane '.$active.'" id="'.$id.'">'.$content.'</div>';
 
 }
-add_shortcode('tab_pane', 'tab_pane_shortcode'); 
+add_shortcode('tab_pane', 'tab_pane_shortcode');
 // Pageblock
 
 function pagetitle_func( $atts ) {
@@ -254,14 +261,14 @@ return get_post_meta($post->ID, $customfieldkey, true) . "<br/><br/>";
 }
 add_shortcode( 'customfield', 'customfield_func' );
 /* ======== ======== ======== ======== ======== ======== */
-/* Page Block Module							  */	
+/* Page Block Module							  */
 /* ======== ======== ======== ======== ======== ======== */
 require get_template_directory() . '/assets/inc/plugins/vc-intergration/modules/factblock.php';
 
 
 
 /* ======== ======== ======== ======== ======== ======== */
-/* Sector block								  */	
+/* Sector block								  */
 /* ======== ======== ======== ======== ======== ======== */
 
 function sectorblock_func( $atts ) {
@@ -282,14 +289,14 @@ while ( $loop->have_posts() ) : $loop->the_post();
 if (isset($GLOBALS['styles'])) {
 	$GLOBALS['styles'] = $GLOBALS['styles'];
 	 } else {
-	$GLOBALS['styles'] = '';	
+	$GLOBALS['styles'] = '';
 	}
 	$colour =get_post_meta(get_the_ID(), '_pagecolour', true);
 	if (!empty($colour)){
 $GLOBALS['styles'] .= ".thumbnail.thumbnail-".get_the_ID(). " .caption{ background:".$colour."; background:".hex2rgba($colour, 0.8)."}";
 $GLOBALS['styles'] .= ".thumbnail.thumbnail-".get_the_ID(). " a:hover .caption{ background:".$colour."; background:".hex2rgba($colour, 0.5)."}";
 	} else {
-	$addclass=  'no-col-set';	
+	$addclass=  'no-col-set';
 	}
 
 
@@ -376,7 +383,7 @@ $args = array(
 'posts_per_page' => -1
 );
 $slug = the_slug();
-query_posts($args); 
+query_posts($args);
 $count=0;
 if ( have_posts() ) {
 $terms = get_terms("case-study-category", array('hide_empty' => true));
@@ -384,7 +391,7 @@ $output .= '<ul id="filter" class="nav nav-pills mb10">';
 
 $output .= '<li class="active"><a  href="#" data-group="all">All</a></li>';
 
-foreach ( $terms as $term ) { 
+foreach ( $terms as $term ) {
 $filters = strip_tags($term->name);
 $filters = str_replace("&amp;", "", $filters);
 $filters = str_replace(" ", "-", $filters);
@@ -432,8 +439,8 @@ add_shortcode( 'casestudies', 'casestudies_func' );
 
 
 
-function testimonials_shortcode($atts) {  
-extract(shortcode_atts(array( 
+function testimonials_shortcode($atts) {
+extract(shortcode_atts(array(
 "el_id" => '{$el_id}',
 ), $atts));
 wp_reset_query();global $post;
@@ -441,7 +448,7 @@ $output;
 $output .= "<div class='row shortcode'>";
 $ws = 1;
 $args2 = array( 'post_type' => 'testimonials', 'testimonials-category' => 'services-testimonials', 'order' => 'ASC', 'orderby' => 'menu_order', 'post_per_page'=>-1);
-query_posts( $args2 ); while (have_posts()) : the_post(); 
+query_posts( $args2 ); while (have_posts()) : the_post();
 $homepagetestimonial =  get_post_meta($post->ID, "_showtestimonialonhomepage", true);
 $hidefromgrid =  get_post_meta($post->ID, "_hidefromgrid", true);
 
@@ -470,7 +477,7 @@ $output .= '</cite>
 </figure>';
 }
 $ws++;
-endwhile; 
+endwhile;
 wp_reset_query();
 
 $output .= "</div>";
@@ -480,8 +487,8 @@ return $output;
 }
 add_shortcode('testimonials', 'testimonials_shortcode');
 
-function testimonialintro_shortcode($atts) {  
-extract(shortcode_atts(array( 
+function testimonialintro_shortcode($atts) {
+extract(shortcode_atts(array(
 "el_id" => '{$el_id}',
 "forcasestudy" => "{$forcasestudy}"
 
@@ -490,7 +497,7 @@ wp_reset_query();global $post;
 $output;
 $ws = 1;
 $args2 = array( 'post_type' => 'testimonials', 'for-case-study' => $forcasestudy);
-query_posts( $args2 ); while (have_posts()) : the_post(); 
+query_posts( $args2 ); while (have_posts()) : the_post();
 $homepagetestimonial =  get_post_meta($post->ID, "_showtestimonialonhomepage", true);
 $output .= '<figure class="shortcode introtext intro-testimonial">';
 $output .= '<blockquote id="testimonial-'.get_the_ID().'">
@@ -517,7 +524,7 @@ $output .= '</cite>
 </figcaption>
 </figure>';
 $ws++;
-endwhile; 
+endwhile;
 wp_reset_query();
 
 return $output;
@@ -526,8 +533,8 @@ return $output;
 add_shortcode('testimonialintro', 'testimonialintro_shortcode');
 
 // Clients
-function clients_shortcode($atts) {  
-extract(shortcode_atts(array( 
+function clients_shortcode($atts) {
+extract(shortcode_atts(array(
 "el_id" => '{$el_id}',
 ), $atts));
 wp_reset_query();global $post;
@@ -535,7 +542,7 @@ $output;
 $terms = get_terms("clients-category", array('hide_empty' => true));
 $output .= '<ul id="filter" class="nav nav-pills mb10">';
 $output .= '<li class="active"><a  href="#" data-group="all">All</a></li>';
-foreach ( $terms as $term ) { 
+foreach ( $terms as $term ) {
 $filters = strip_tags($term->name);
 $filters = str_replace("&amp;", "", $filters);
 $filters = str_replace(" ", "-", $filters);
@@ -544,7 +551,7 @@ $output .= '<li><a href="#" data-group="'.$filters.'">'.$term->name.'</a></li>';
 $output .= '</ul><div class="clearfix"></div>';
 $output .= "<div class='row filter-grid'>";
 query_posts(array('post_type' => 'clients',  'order' => 'ASC', 'orderby'=>'title', 'posts_per_page'=> -1)); ?>
-<?php while (have_posts()) : the_post(); 
+<?php while (have_posts()) : the_post();
 $filters = get_the_term_list( $post->ID, 'clients-category', '', ', ' );
 
 $filters = strip_tags($filters);
@@ -555,18 +562,18 @@ $filters = '"'.$filters.'"';
 $clienturl = get_post_meta($post->ID, "_clienturl", true);
 $output .=  "<div class='col-md-2 col-sm-3 col-xs-6 col-sm-6 grid_brick mb20' data-groups='[\"all\", ".$filters." ]'>";
 if ($clienturl !== 'none') { $output .= '<a href="'.$clienturl.'">';
-} $output .= get_the_post_thumbnail($post->ID, "page-block-thumb", array('class' => 'img-thumbnail')); 
+} $output .= get_the_post_thumbnail($post->ID, "page-block-thumb", array('class' => 'img-thumbnail'));
 $output .='<h2 class="sr-only">';
-$output .= get_the_title(); 
+$output .= get_the_title();
 $output .= '</h2>';
-if ($clienturl !== 'none') { $output .= '</a>'; } 
+if ($clienturl !== 'none') { $output .= '</a>'; }
 $output .= '</div>';
 $filters ="";
 endwhile;
 $output .= "<div class='col-xs-1 shuffle_sizer'></div></div>";
 
 $output .= "</div>";
-wp_reset_query();	
+wp_reset_query();
 return $output;
 }
 add_shortcode('clients', 'clients_shortcode');
@@ -575,12 +582,12 @@ add_shortcode('clients', 'clients_shortcode');
 
 // MODAL
 
-function modal_shortcode($atts, $content) {  
-extract(shortcode_atts(array( 
+function modal_shortcode($atts, $content) {
+extract(shortcode_atts(array(
 "el_id" => '{$el_id}',
 "title" => '{$modal_title}',
 
-), $atts));  
+), $atts));
 
 return '<div  id="'. $el_id .'" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="'. $el_id .'" aria-hidden="true">
 <div class="modal-header">
@@ -597,32 +604,32 @@ return '<div  id="'. $el_id .'" class="modal hide fade" tabindex="-1" role="dial
 </div>';
 
 }
-add_shortcode('modal', 'modal_shortcode'); 
+add_shortcode('modal', 'modal_shortcode');
 
 
-function home_url_shortcode($atts, $content) {  
-extract(shortcode_atts(array( 
+function home_url_shortcode($atts, $content) {
+extract(shortcode_atts(array(
 "el_id" => '{$el_id}',
 "title" => '{$modal_title}',
 
-), $atts));  
+), $atts));
 
 return home_url();
 
 }
-add_shortcode('home_url', 'home_url_shortcode'); 
+add_shortcode('home_url', 'home_url_shortcode');
 
-function social_share_shortcode($atts, $content) {  
-extract(shortcode_atts(array( 
+function social_share_shortcode($atts, $content) {
+extract(shortcode_atts(array(
 "el_id" => '{$el_id}',
 "dropupdown" => '{$dropupdown}',
 
-), $atts));  
+), $atts));
  $output;
  if($dropupdown == 'up') {
-$theclass= 'dropup'	; 
+$theclass= 'dropup'	;
  } else {
-	 $theclass= 'dropdown'	; 
+	 $theclass= 'dropdown'	;
 
  }
  $output .= '<hr /><div class="post-meta mt10"><div class="'.$theclass.'">
@@ -645,7 +652,7 @@ $output .= '<li class="googleplus"> <a href="https://plus.google.com/share?url='
 $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 $output .= '<li class="pinterest">
 	   <a href="http://pinterest.com/pin/create/button/?url='.get_the_permalink().'&amp;media='.$url.'&amp;description='.str_replace(' ', '%20', $thetitle).'%20'.get_the_permalink().'" target="_blank"> <span class="icon-social-pinterest"> </span> <span class="sr-only">pinterest</span> </a> </li>';
- 
+
   $output .= '</ul>
 </div>';
 $output .= '</a>';
@@ -653,39 +660,39 @@ if(get_option('themetype') == 'blog') {
 $output .='<em class="icon icon-eye"><span class="sr-only">Views</span></em>'.(my_get_post_views()).'<em class="icon icon-comment"><span class="sr-only">Comments</span></em>'.get_comments_number()." Comment<small>(s)</small>";
 }
 $output .="</div>";
-  
- return  $output; 
+
+ return  $output;
 }
-add_shortcode('social_share', 'social_share_shortcode'); 
+add_shortcode('social_share', 'social_share_shortcode');
 
 
-function gigya_shortcode($atts, $content) {  
-extract(shortcode_atts(array( 
+function gigya_shortcode($atts, $content) {
+extract(shortcode_atts(array(
 "el_id" => '',
 "src" => '',
 "width" => '',
 "height" => '',
 "style" => ''
-), $atts));  
+), $atts));
  $output;
  $pos = strpos($src, 'embed_player.swf');
 if ($pos !== false) {
    $src = str_replace('https://', '', $src);
   $src = str_replace('.cloudfront.net/cdn/embed_player.swf', '', $src);
 $src ='http://embeds.audioboom.com/boos/3901412-a-heavyweight-problem-removing-travellers-from-development-sites/embed/v4?eid='.$src;
-	
+
 } else {
 	$src = $src;
 }
 
 $output .= '<iframe width="'.$width.'" height="400" style="'.$style.'" frameborder="0" allowtransparency="allowtransparency" scrolling="no" src="'.$src.'" title="Gateley Plc"></iframe>';
-  
- return  $output; 
-}
-add_shortcode('gigya', 'gigya_shortcode'); 
 
-function iframe_shortcode($atts, $content) {  
-extract(shortcode_atts(array( 
+ return  $output;
+}
+add_shortcode('gigya', 'gigya_shortcode');
+
+function iframe_shortcode($atts, $content) {
+extract(shortcode_atts(array(
 "el_id" => '{$el_id}',
 "title" => '{$title}',
 "src" => '{$src}',
@@ -697,7 +704,7 @@ extract(shortcode_atts(array(
 "disclaimer" => '{$disclaimer}',
 "type" => "{$type}",
 "css" => '{$css}'
-), $atts));  
+), $atts));
 $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), $atts );
 
 $output;
@@ -717,10 +724,10 @@ $output .= '<div class="feed-content-wrapper text-center">
 <div class="mt10"><small class="clear">'.$disclaimer.'</small></div>
 </div>';
  }
- 
+
 $output .= '</div>';
  } else {
- 
+
  $output .='<div class="fluidMedia">';
   $output .=' <iframe src="'.$src.'"></iframe>';
  $output .='</div>';
@@ -729,4 +736,4 @@ $output .= '</div>';
 
 return $output;
 }
-add_shortcode('iframe', 'iframe_shortcode'); 
+add_shortcode('iframe', 'iframe_shortcode');

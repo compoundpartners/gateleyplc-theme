@@ -20,7 +20,7 @@
   	$args = array(
       'labels' => $labels,
       'public' => true,
-      'has_archive' => true,
+      'has_archive' => false,
       'show_ui' => true,
       'capability_type' => 'post',
       'taxonomies'  => array( 'category' ),
