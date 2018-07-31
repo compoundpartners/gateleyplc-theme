@@ -140,7 +140,7 @@ if(!empty(get_theme_mod("gateley_plc_ie6_logo"))) {
 <?php } ?>
 
 <li class="dropdown gateley-menu-fw">
-  <a href="https://investors.gateleyplc.com/"><span class="hidden-xs">Investors</span></a>
+   <a href="https://investors.gateleyplc.com/"><span class="sep hidden-xs">|</span> <span class="hidden-xs">Investors</span></a>
 </li>
 
 <?php  if(get_option('showsocialmenu') !== 'no') { ?>
