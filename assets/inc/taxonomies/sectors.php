@@ -1,6 +1,6 @@
 <?php // sectors
 function gateley_plc_custom_sector_taxonomies() {
- 
+
   // Add new taxonomy, make it hierarchical (like categories)
   $labels = array(
     'name'              => _x( 'Sectors', 'taxonomy general name' ),
@@ -15,8 +15,8 @@ function gateley_plc_custom_sector_taxonomies() {
     'new_item_name'     => __( 'New Sector Name' ),
     'menu_name'         => __( 'Sector' ),
   );
- $screens =  array('page', 'post', 'people', 'services', 'sectors'); 
-foreach( $screens as $screen) { 
+ $screens =  array('page', 'post', 'people', 'services', 'sectors', 'corporate-deals', 'housebuilder-markets', 'talking-matters', 'talking-trainees');
+foreach( $screens as $screen) {
 add_filter( 'manage_edit-'.strtolower($screen).'_columns', 'my_Sector_columns', 100 );
 
 
@@ -41,7 +41,7 @@ function custom_Sector_columns( $column, $post_id ) {
 				_e( 'No Sector(s) Set', 'gateley-plc' );
 			}
 			break;
-		
+
 	}
 }
 
@@ -54,10 +54,8 @@ function custom_Sector_columns( $column, $post_id ) {
 				'show_in_nav_menus'          => true,
 				'show_tagcloud'              => true,  //  'rewrite'      => array( 'slug' => 'sector' ),
   ));
-  
-    
- 
+
+
+
 }
 add_action( 'init', 'gateley_plc_custom_sector_taxonomies');
-
-

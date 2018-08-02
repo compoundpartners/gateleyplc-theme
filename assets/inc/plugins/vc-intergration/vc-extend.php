@@ -1,7 +1,7 @@
 <?php add_action('vc_before_init', 'gateley_plc_integrateWithVC');
 function get_custom_terms($taxonomies){
 $args = array('orderby'=>'asc','hide_empty'=>false);
-$custom_terms = get_terms('event-categories', $args);    
+$custom_terms = get_terms('event-categories', $args);
 $options = array();
 	  $options['unset'] = 'Unset';
 	  $options['None'] = 'none';
@@ -34,7 +34,7 @@ function posttype()
 {
     $screens = get_post_types('', 'names');
     foreach ($screens as $screen) {
-        
+
     }
 }
 function whichcasestudy()
@@ -56,14 +56,14 @@ function whichcasestudy()
 }
 function whichgallery()
 {
-    
+
     wp_reset_query();
     global $post, $wp_query, $page, $meta;
     $loop = new WP_Query(array(
         'post_type' => 'page',
         'posts_per_page' => -1
     ));
-    
+
     $options = array();
     if ($loop->have_posts()) {
         while ($loop->have_posts()):
@@ -74,7 +74,7 @@ function whichgallery()
         endwhile;
         return $options;
     }
-    
+
 }
 function customfields()
 {
@@ -102,14 +102,14 @@ function wpsites()
 
 function gateley_plc_integrateWithVC()
 {
-    
+
     vc_map(array(
         "name" => __("Page Title"),
         "base" => "pagetitle",
         "class" => "",
         "category" => __('Content'),
         "params" => array(
-            
+
             array(
                 "type" => "textfield",
                 "class" => "",
@@ -120,14 +120,14 @@ function gateley_plc_integrateWithVC()
             )
         )
     ));
-    
+
         vc_map(array(
         "name" => __("iFrame"),
         "base" => "iframe",
         "class" => "",
         "category" => __('Content'),
         "params" => array(
-            
+
             array(
                 "type" => "textfield",
                 "class" => "",
@@ -136,7 +136,7 @@ function gateley_plc_integrateWithVC()
                 "value" => '',
                 "description" => ''
             ),
-		  
+
 		  array(
                 "type" => "textfield",
                 "class" => "",
@@ -184,7 +184,7 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Show Title Block", "js_composer"),
                 "group" => 'Display Settings'
                ),
-			
+
 			  array(
                 "type" => "dropdown",
                 "heading" => __("Show Content?", "js_composer"),
@@ -196,14 +196,14 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Show Content Block", "js_composer"),
                 "group" => 'Display Settings'
                ),
-		          
+
 			  array(
                 "type" => "vc_link",
                 "heading" => __("The Link", "js_composer"),
                 "param_name" => "link",
                 "description" => __("link", "js_composer"),
                 "group" => 'Display Settings'
-            ),  
+            ),
 		   array(
                 "type" => "textarea",
                 "class" => "",
@@ -236,16 +236,16 @@ function gateley_plc_integrateWithVC()
     )
     )
     ) );*/
-    
-    
-    
+
+
+
     vc_map(array(
         "name" => __("Page Block"),
         "base" => "pageblock",
         "class" => "",
         "category" => __('Content'),
         "params" => array(
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -265,7 +265,7 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
                ),
-		          
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Display Type", "js_composer"),
@@ -278,7 +278,7 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Display Set Up", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		      array(
                 'type' => 'css_editor',
@@ -296,19 +296,19 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Has Coloured Thumbnail Overlay?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             )
-		  
+
         )
     ));
-	
+
 	vc_map(array(
         "name" => __("Thumbnail Block"),
         "base" => "thumbnail",
         "class" => "",
         "category" => __('Content'),
         "params" => array(
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -322,7 +322,7 @@ function gateley_plc_integrateWithVC()
                 "heading" => __("Page Content", "js_composer"),
                 "param_name" => "pagecontent",
             ),
-			
+
 			array(
                 "type" => "attach_image",
                 "heading" => __("Page Image", "js_composer"),
@@ -345,19 +345,19 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Has Coloured Thumbnail Overlay?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             )
-		  
+
         )
     ));
-    
+
      vc_map(array(
         "name" => __("Service Block"),
         "base" => "serviceblock",
         "class" => "",
         "category" => __('Content'),
         "params" => array(
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -377,7 +377,7 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
                ),
-		          
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Display Type", "js_composer"),
@@ -390,7 +390,7 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Display Set Up", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		      array(
                 'type' => 'css_editor',
@@ -398,11 +398,11 @@ function gateley_plc_integrateWithVC()
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-		  
+
         )
     ));
-    
-    
+
+
     vc_map(array(
         "name" => __("Link Block"),
         "base" => "linkblockbuilder",
@@ -421,17 +421,17 @@ function gateley_plc_integrateWithVC()
                 "param_name" => "blocktitle",
                 "value" => " ",
                 "description" => __("Block Title.", "js_composer"),
-                             "group" => 'Display Settings'                
-            ), 
+                             "group" => 'Display Settings'
+            ),
 		    array(
                 "type" => "textarea",
                 "heading" => __("Content", "js_composer"),
                 "param_name" => "blockcontent",
                 "description" => __("Block Content", "js_composer"),
-                  "group" => 'Display Settings'                
+                  "group" => 'Display Settings'
 
-            ),   
-            
+            ),
+
 		 array(
                 "type" => "dropdown",
                 "heading" => __("Display Type", "js_composer"),
@@ -444,26 +444,26 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Display Set Up", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-		  
+
 		   array(
                 "type" => "vc_link",
                 "heading" => __("The Link", "js_composer"),
                 "param_name" => "blocklink",
                 "description" => __("Enter hyperlink location", "js_composer"),
                 "group" => 'Display Settings'
-            ),            
+            ),
            array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-		  
+
         )
     ));
-   
+
     vc_map(array(
         "name" => __("Call to action Block"),
         "base" => "call_to_action",
@@ -481,21 +481,21 @@ function gateley_plc_integrateWithVC()
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "calltoactioncontent",
                 "value" => " ",
-            ), 
+            ),
 		    array(
                 "type" => "vc_link",
                 "heading" => __("Link", "js_composer"),
                 "param_name" => "calltoactionlink",
                 "description" => __("Block Content", "js_composer"),
-                  "group" => 'Display Settings'                
+                  "group" => 'Display Settings'
 
-            ),   
+            ),
 
            array(
                 'type' => 'colorpicker',
                 'heading' => __('Colour Overlay', 'my-text-domain'),
                 'param_name' => 'calltoactioncoloroverlay',
-				 "value" => 'rgba(96, 198, 197, 0.8)', 
+				 "value" => 'rgba(96, 198, 197, 0.8)',
                 'group' => __('Design options', 'my-text-domain')
             ),
 		   array(
@@ -504,18 +504,18 @@ function gateley_plc_integrateWithVC()
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-		  
+
         )
     ));
-   
-    
+
+
     vc_map(array(
         "name" => __("Sector Block"),
         "base" => "sectorblock",
         "class" => "",
         "category" => __('Content'),
         "params" => array(
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -544,20 +544,20 @@ function gateley_plc_integrateWithVC()
                 "param_name" => "percentage",
                 "value" => " ",
                 "description" => __("Enter Fact Statistic Here.", "js_composer"),
-                             "group" => 'Display Settings'                
-            ), 
+                             "group" => 'Display Settings'
+            ),
 		    array(
                 "type" => "textarea",
                 "heading" => __("Fact", "js_composer"),
                 "param_name" => "fact",
                 "description" => __("Enter your fact here", "js_composer"),
-                  "group" => 'Display Settings'                
+                  "group" => 'Display Settings'
 
             ),
-         
+
         )
     ));
-    
+
           vc_map(array(
         "name" => __("Meta Data"),
         "base" => "social_share",
@@ -576,12 +576,12 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-		
+
         )
     ));
-    
+
     vc_map(array(
         "name" => __("Case Studies"),
         "base" => "casestudies",
@@ -599,11 +599,11 @@ function gateley_plc_integrateWithVC()
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
-		
-		  
-		  
+
+
+
 		    array(
                 "type" => "dropdown",
                 "heading" => __("Show Content?", "js_composer"),
@@ -614,7 +614,7 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -625,7 +625,7 @@ function gateley_plc_integrateWithVC()
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "colorpicker",
@@ -634,9 +634,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-            
+
 		    array(
                 "type" => "colorpicker",
                 "heading" => __("Header Link Background Colour", "js_composer"),
@@ -644,9 +644,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-		  
+
 		      array(
                 "type" => "colorpicker",
                 "heading" => __("Header LinkColour", "js_composer"),
@@ -654,7 +654,7 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
             )
     ));
@@ -668,11 +668,11 @@ function gateley_plc_integrateWithVC()
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
-		
-		  
-		  
+
+
+
 		    array(
                 "type" => "dropdown",
                 "heading" => __("Show Content?", "js_composer"),
@@ -683,7 +683,7 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -694,7 +694,7 @@ function gateley_plc_integrateWithVC()
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "colorpicker",
@@ -703,9 +703,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-            
+
 		    array(
                 "type" => "colorpicker",
                 "heading" => __("Header Link Background Colour", "js_composer"),
@@ -713,9 +713,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-		  
+
 		      array(
                 "type" => "colorpicker",
                 "heading" => __("Header LinkColour", "js_composer"),
@@ -723,7 +723,7 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
             )
     ));
@@ -737,7 +737,7 @@ function gateley_plc_integrateWithVC()
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -749,7 +749,7 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -760,7 +760,7 @@ function gateley_plc_integrateWithVC()
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "colorpicker",
@@ -769,9 +769,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-            
+
 		    array(
                 "type" => "colorpicker",
                 "heading" => __("Header Link Background Colour", "js_composer"),
@@ -779,9 +779,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-		  
+
 		      array(
                 "type" => "colorpicker",
                 "heading" => __("Header LinkColour", "js_composer"),
@@ -789,7 +789,7 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
             )
     ));
@@ -803,7 +803,7 @@ function gateley_plc_integrateWithVC()
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -815,7 +815,7 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -826,11 +826,12 @@ function gateley_plc_integrateWithVC()
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
-		
+
             )
     ));
+
     vc_map(array(
         "name" => __("Paginated News Feed"),
         "base" => "paginatednews",
@@ -841,7 +842,7 @@ function gateley_plc_integrateWithVC()
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -853,7 +854,7 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -864,7 +865,7 @@ function gateley_plc_integrateWithVC()
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "colorpicker",
@@ -873,9 +874,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-            
+
 		    array(
                 "type" => "colorpicker",
                 "heading" => __("Header Link Background Colour", "js_composer"),
@@ -883,9 +884,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-		  
+
 		      array(
                 "type" => "colorpicker",
                 "heading" => __("Header LinkColour", "js_composer"),
@@ -893,11 +894,284 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
             )
     ));
-    
+
+
+				vc_map(array(
+						"name" => __("Paginated Talking Matters Feed"),
+						"base" => "paginatedtalkingmatters",
+						"class" => "",
+						"category" => __('Content'),
+						"params" => array(
+						array(
+										"type" => "textfield",
+										"heading" => __("Title", "js_composer"),
+										"param_name" => "title"
+
+								),
+						array(
+										"type" => "dropdown",
+										"heading" => __("Show Content?", "js_composer"),
+										"param_name" => "showcontent",
+										"value" => array(
+												'No' => 'no',
+												'Yes' => 'yes'
+										),
+										"description" => __("Show a truncated content?", "js_composer"),
+										"group" => 'Display Settings'
+
+								),
+						array(
+										"type" => "dropdown",
+										"heading" => __("Show Post Meta?", "js_composer"),
+										"param_name" => "postmeta",
+										"value" => array(
+												'No' => 'no',
+												'Yes' => 'yes'
+										),
+										"group" => 'Display Settings'
+
+								),
+						array(
+										"type" => "colorpicker",
+										"heading" => __("Header Background Colour", "js_composer"),
+										"param_name" => "headerbackgroundcolour",
+										"description" => __("Header Background Colour", "js_composer"),
+													 "group" => 'Title Display Settings'
+
+
+								),
+
+						array(
+										"type" => "colorpicker",
+										"heading" => __("Header Link Background Colour", "js_composer"),
+										"param_name" => "headerlinkbackgroundcolour",
+										"description" => __("Header Link Background Colour", "js_composer"),
+													 "group" => 'Title Display Settings'
+
+
+								),
+
+							array(
+										"type" => "colorpicker",
+										"heading" => __("Header LinkColour", "js_composer"),
+										"param_name" => "headerlinkcolour",
+										"description" => __("Header Link Colour", "js_composer"),
+													 "group" => 'Title Display Settings'
+
+
+								),
+								)
+				));
+
+
+								vc_map(array(
+										"name" => __("Paginated Talking Trainees Feed"),
+										"base" => "paginatedtalkingtrainees",
+										"class" => "",
+										"category" => __('Content'),
+										"params" => array(
+										array(
+														"type" => "textfield",
+														"heading" => __("Title", "js_composer"),
+														"param_name" => "title"
+
+												),
+										array(
+														"type" => "dropdown",
+														"heading" => __("Show Content?", "js_composer"),
+														"param_name" => "showcontent",
+														"value" => array(
+																'No' => 'no',
+																'Yes' => 'yes'
+														),
+														"description" => __("Show a truncated content?", "js_composer"),
+														"group" => 'Display Settings'
+
+												),
+										array(
+														"type" => "dropdown",
+														"heading" => __("Show Post Meta?", "js_composer"),
+														"param_name" => "postmeta",
+														"value" => array(
+																'No' => 'no',
+																'Yes' => 'yes'
+														),
+														"group" => 'Display Settings'
+
+												),
+										array(
+														"type" => "colorpicker",
+														"heading" => __("Header Background Colour", "js_composer"),
+														"param_name" => "headerbackgroundcolour",
+														"description" => __("Header Background Colour", "js_composer"),
+																	 "group" => 'Title Display Settings'
+
+
+												),
+
+										array(
+														"type" => "colorpicker",
+														"heading" => __("Header Link Background Colour", "js_composer"),
+														"param_name" => "headerlinkbackgroundcolour",
+														"description" => __("Header Link Background Colour", "js_composer"),
+																	 "group" => 'Title Display Settings'
+
+
+												),
+
+											array(
+														"type" => "colorpicker",
+														"heading" => __("Header LinkColour", "js_composer"),
+														"param_name" => "headerlinkcolour",
+														"description" => __("Header Link Colour", "js_composer"),
+																	 "group" => 'Title Display Settings'
+
+
+												),
+												)
+								));
+
+
+																vc_map(array(
+																		"name" => __("Paginated Housebuilder Markets Feed"),
+																		"base" => "paginatedhousebuildermarkets",
+																		"class" => "",
+																		"category" => __('Content'),
+																		"params" => array(
+																		array(
+																						"type" => "textfield",
+																						"heading" => __("Title", "js_composer"),
+																						"param_name" => "title"
+
+																				),
+																		array(
+																						"type" => "dropdown",
+																						"heading" => __("Show Content?", "js_composer"),
+																						"param_name" => "showcontent",
+																						"value" => array(
+																								'No' => 'no',
+																								'Yes' => 'yes'
+																						),
+																						"description" => __("Show a truncated content?", "js_composer"),
+																						"group" => 'Display Settings'
+
+																				),
+																		array(
+																						"type" => "dropdown",
+																						"heading" => __("Show Post Meta?", "js_composer"),
+																						"param_name" => "postmeta",
+																						"value" => array(
+																								'No' => 'no',
+																								'Yes' => 'yes'
+																						),
+																						"group" => 'Display Settings'
+
+																				),
+																		array(
+																						"type" => "colorpicker",
+																						"heading" => __("Header Background Colour", "js_composer"),
+																						"param_name" => "headerbackgroundcolour",
+																						"description" => __("Header Background Colour", "js_composer"),
+																									 "group" => 'Title Display Settings'
+
+
+																				),
+
+																		array(
+																						"type" => "colorpicker",
+																						"heading" => __("Header Link Background Colour", "js_composer"),
+																						"param_name" => "headerlinkbackgroundcolour",
+																						"description" => __("Header Link Background Colour", "js_composer"),
+																									 "group" => 'Title Display Settings'
+
+
+																				),
+
+																			array(
+																						"type" => "colorpicker",
+																						"heading" => __("Header LinkColour", "js_composer"),
+																						"param_name" => "headerlinkcolour",
+																						"description" => __("Header Link Colour", "js_composer"),
+																									 "group" => 'Title Display Settings'
+
+
+																				),
+																				)
+																));
+
+
+		vc_map(array(
+				"name" => __("Paginated Corporate Deals Feed"),
+				"base" => "paginatedcorporatedeals",
+				"class" => "",
+				"category" => __('Content'),
+				"params" => array(
+				array(
+								"type" => "textfield",
+								"heading" => __("Title", "js_composer"),
+								"param_name" => "title"
+
+						),
+				array(
+								"type" => "dropdown",
+								"heading" => __("Show Content?", "js_composer"),
+								"param_name" => "showcontent",
+								"value" => array(
+										'No' => 'no',
+										'Yes' => 'yes'
+								),
+								"description" => __("Show a truncated content?", "js_composer"),
+								"group" => 'Display Settings'
+
+						),
+				array(
+								"type" => "dropdown",
+								"heading" => __("Show Post Meta?", "js_composer"),
+								"param_name" => "postmeta",
+								"value" => array(
+										'No' => 'no',
+										'Yes' => 'yes'
+								),
+								"group" => 'Display Settings'
+
+						),
+				array(
+								"type" => "colorpicker",
+								"heading" => __("Header Background Colour", "js_composer"),
+								"param_name" => "headerbackgroundcolour",
+								"description" => __("Header Background Colour", "js_composer"),
+											 "group" => 'Title Display Settings'
+
+
+						),
+
+				array(
+								"type" => "colorpicker",
+								"heading" => __("Header Link Background Colour", "js_composer"),
+								"param_name" => "headerlinkbackgroundcolour",
+								"description" => __("Header Link Background Colour", "js_composer"),
+											 "group" => 'Title Display Settings'
+
+
+						),
+
+					array(
+								"type" => "colorpicker",
+								"heading" => __("Header LinkColour", "js_composer"),
+								"param_name" => "headerlinkcolour",
+								"description" => __("Header Link Colour", "js_composer"),
+											 "group" => 'Title Display Settings'
+
+
+						),
+						)
+		));
+
+
     vc_map(array(
         "name" => __("Tweets"),
         "base" => "tweet",
@@ -920,7 +1194,7 @@ function gateley_plc_integrateWithVC()
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -931,7 +1205,7 @@ function gateley_plc_integrateWithVC()
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "colorpicker",
@@ -940,9 +1214,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-            
+
 		    array(
                 "type" => "colorpicker",
                 "heading" => __("Header Link Background Colour", "js_composer"),
@@ -950,9 +1224,9 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-		  
+
 		      array(
                 "type" => "colorpicker",
                 "heading" => __("Header LinkColour", "js_composer"),
@@ -960,7 +1234,7 @@ function gateley_plc_integrateWithVC()
                 "description" => __("Header Link Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
 		   array(
                 "type" => "dropdown",
@@ -988,7 +1262,7 @@ array(
             ),
             )
     ));
-    
+
       vc_map(array(
         "name" => __("Network Blog"),
         "base" => "networkblogfeed",
@@ -999,7 +1273,7 @@ array(
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -1011,7 +1285,7 @@ array(
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
 		    array(
                 "type" => "dropdown",
@@ -1022,7 +1296,7 @@ array(
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
 		   array(
                 "type" => "dropdown",
@@ -1039,9 +1313,9 @@ array(
                 "description" => __("Header Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-            
+
 		    array(
                 "type" => "colorpicker",
                 "heading" => __("Header Link Background Colour", "js_composer"),
@@ -1049,9 +1323,9 @@ array(
                 "description" => __("Header Link Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-		  
+
 		      array(
                 "type" => "colorpicker",
                 "heading" => __("Header LinkColour", "js_composer"),
@@ -1059,27 +1333,27 @@ array(
                 "description" => __("Header Link Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
             )
     ));
-  
+
     vc_map(array(
         "name" => __("Sub Page Grid"),
         "base" => "subpagegrid",
         "class" => "",
         "category" => __('Content'),
         "params" => array(
-        
+
             array(
                 "type" => "textfield",
                 "heading" => __("Amount of Posts to Show", "js_composer"),
                 "param_name" => "amountofposts",
                 "value" => "-1",
                 "description" => __("Amount of posts to show", "js_composer"),
-                "group" => 'Query Settings'                
+                "group" => 'Query Settings'
             ),
-                        
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Title", "js_composer"),
@@ -1091,9 +1365,9 @@ array(
                 "description" => __("Show Title", "js_composer"),
                 "group" => 'Title Display Settings'
             ),
-			
-			
-		  
+
+
+
 		      array(
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
@@ -1104,9 +1378,9 @@ array(
                     'element' => 'showtitle',
                     'value' => 'yes'
                 ),
-                "group" => 'Title Display Settings'                
+                "group" => 'Title Display Settings'
             ),
-			
+
 			   array(
                 "type" => "dropdown",
                 "heading" => __("Custom Order", "js_composer"),
@@ -1118,8 +1392,8 @@ array(
                 "description" => __("Custom order", "js_composer"),
                 "group" => 'Display Settings'
             ),
-		  
-		  
+
+
 		        array(
                 "type" => "dropdown",
                 "heading" => __("Order", "js_composer"),
@@ -1137,10 +1411,10 @@ array(
                 "description" => __("Custom order", "js_composer"),
                 "group" => 'Display Settings'
             ),
-		  
-            
-			
-            
+
+
+
+
 		 array(
                 "type" => "dropdown",
                 "heading" => __("Masonry?", "js_composer"),
@@ -1164,7 +1438,7 @@ array(
                 "description" => __("Is this pulling through the tagged related posts?", "js_composer"),
                 "group" => 'Query Settings'
             ),
-		  
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Network Query", "js_composer"),
@@ -1176,7 +1450,7 @@ array(
                 "description" => __("Does this need to pull the data from another site in this network?", "js_composer"),
                 "group" => 'Query Settings'
             ),
-		  
+
 		   array(
                 "type" => "dropdown",
                 "heading" => __("Top Level Page only?", "js_composer"),
@@ -1188,7 +1462,7 @@ array(
                 "description" => __("Show only parent pages & not sub pages?", "js_composer"),
                 "group" => 'Query Settings'
             ),
-                        
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Which Site From Network?", "js_composer"),
@@ -1201,7 +1475,7 @@ array(
                 ),
                 "group" => 'Query Settings'
             ),
-        
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Which Category", "js_composer"),
@@ -1214,9 +1488,9 @@ array(
                 ),*/
                 "group" => 'Query Settings'
             ),
-          
-            
-            
+
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Header Boxed?", "js_composer"),
@@ -1228,7 +1502,7 @@ array(
                 "description" => __("Does the header have a block background?", "js_composer"),
                 "group" => 'Display Settings'
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Has Link?", "js_composer"),
@@ -1244,8 +1518,8 @@ array(
                 ),
                 "group" => 'Title Display Settings'
             ),
-            
-            
+
+
             array(
                 "type" => "vc_link",
                 "heading" => __("The Link", "js_composer"),
@@ -1256,9 +1530,9 @@ array(
                     'value' => 'yes'
                 ),
                 "group" => 'Title Display Settings'
-            ),            
-            
-            
+            ),
+
+
 		  array(
                 "type" => "colorpicker",
                 "heading" => __("Header Background Colour", "js_composer"),
@@ -1266,9 +1540,9 @@ array(
                 "description" => __("Header Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-            
+
 		    array(
                 "type" => "colorpicker",
                 "heading" => __("Header Link Background Colour", "js_composer"),
@@ -1276,9 +1550,9 @@ array(
                 "description" => __("Header Link Background Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-		  
+
 		      array(
                 "type" => "colorpicker",
                 "heading" => __("Header LinkColour", "js_composer"),
@@ -1286,10 +1560,10 @@ array(
                 "description" => __("Header Link Colour", "js_composer"),
 			                 "group" => 'Title Display Settings'
 
-                
+
             ),
-            
-            
+
+
             array(
                 "type" => "posttypes",
                 "class" => "",
@@ -1297,12 +1571,12 @@ array(
                 "param_name" => "posttypes",
                 "description" => '',
                 "group" => 'Query Settings'
-                
+
             ),
-		  
-		
-			 
-			 
+
+
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Siblings or Children", "js_composer"),
@@ -1313,9 +1587,9 @@ array(
                     'Children' => 'child'
                 ),
                 "description" => __("Return Siblins or Children?", "js_composer"),
-                "group" => 'Query Settings',                
+                "group" => 'Query Settings',
             ),
-		  
+
 		       array(
                 "type" => "dropdown",
                 "heading" => __("Image Display", "js_composer"),
@@ -1325,11 +1599,11 @@ array(
                     'Date' => 'date',
                 ),
                 "description" => __("Display Featured Image or Data?", "js_composer"),
-                "group" => 'Display Settings',                
+                "group" => 'Display Settings',
             ),
-		  
-		
-		  
+
+
+
 		   array(
                 "type" => "checkbox",
                 "heading" => __("Parent Page", "js_composer"),
@@ -1341,9 +1615,9 @@ array(
                     'element' => 'posttypes',
                     'value' => 'page'
                 )
-                
+
             ),
-            
+
 		array(
                 "type" => "checkbox",
                 "heading" => __("Exclude Pages", "js_composer"),
@@ -1355,12 +1629,12 @@ array(
                     'element' => 'posttypes',
                     'value' => 'page'
                 )
-                
+
             ),
-            
-		    
-			 
-			 
+
+
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Content?", "js_composer"),
@@ -1371,10 +1645,10 @@ array(
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-		  
-		  
+
+
 		       array(
                 "type" => "textfield",
                 "heading" => __("Truncate Length", "js_composer"),
@@ -1385,12 +1659,12 @@ array(
                     'element' => 'showcontent',
                     'value' => 'yes'
                 ),
-                "group" => 'Display Settings'                
+                "group" => 'Display Settings'
             ),
-		  
-		  
-		  
-		  	 
+
+
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Divider?", "js_composer"),
@@ -1401,9 +1675,9 @@ array(
                 ),
                 "description" => __("Show horizontal divider", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-		  
+
 		  array(
                 "type" => "dropdown",
                 "heading" => __("Show Post Meta?", "js_composer"),
@@ -1413,9 +1687,9 @@ array(
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Pagination?", "js_composer"),
@@ -1426,9 +1700,9 @@ array(
                 ),
                 "description" => __("Show pagination?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Display Type", "js_composer"),
@@ -1442,9 +1716,9 @@ array(
                 ),
                 "description" => __("Display Set Up", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Columns Required?", "js_composer"),
@@ -1455,11 +1729,11 @@ array(
                 ),
                 "description" => __("Columns Required", "js_composer"),
                 "group" => 'Display Settings'
-                
-                
-                
+
+
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Columns", "js_composer"),
@@ -1485,10 +1759,10 @@ array(
                     'element' => 'columngrid',
                     'value' => 'yes'
                 )
-                
+
             ),
-            
-            
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Tablet Columns", "js_composer"),
@@ -1515,8 +1789,8 @@ array(
                     'value' => 'yes'
                 )
             ),
-            
-		  	 
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Colour Thumbnails", "js_composer"),
@@ -1527,9 +1801,9 @@ array(
                 ),
                 "description" => __("Has Coloured Thumbnail Overlay?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-		  
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Tax Query", "js_composer"),
@@ -1540,9 +1814,9 @@ array(
                 ),
                 "description" => __("Tax Query?", "js_composer"),
                 "group" => 'Query Settings'
-                
+
             ),
-		  
+
 		      array(
                 "type" => "dropdown",
                 "heading" => __("Tax", "js_composer"),
@@ -1553,13 +1827,13 @@ array(
                    'Sector' =>  'gateley_plc_sector',
 			  'Location' =>  'gateley_plc_location',
                 ),
-			
+
                 "description" => __("Taxonomy", "js_composer"),
                 "group" => 'Query Settings'
-                
+
             ),
-		  
-            
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Pop Up Link?", "js_composer"),
@@ -1570,42 +1844,42 @@ array(
                 ),
                 "description" => __("Popup before opening to page?", "js_composer"),
                 "group" => 'Query Settings'
-                
+
             ),
-            
+
             array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-            
-            
-            
-            
+
+
+
+
         ),
         'description' => 'Shows this pages child pages in a block grid'
     ));
-    
+
    /* RELATED POSTS */
-   
-   
+
+
     vc_map(array(
         "name" => __("Related Posts"),
         "base" => "relatedposts",
         "class" => "",
         "category" => __('Content'),
         "params" => array(
-        
+
             array(
                 "type" => "textfield",
                 "heading" => __("Amount of Posts to Show", "js_composer"),
                 "param_name" => "amountofposts",
                 "value" => "-1",
                 "description" => __("Amount of posts to show", "js_composer"),
-                "group" => 'Query Settings'                
+                "group" => 'Query Settings'
             ),
-                        
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Title", "js_composer"),
@@ -1617,7 +1891,7 @@ array(
                 "description" => __("Show Title", "js_composer"),
                 "group" => 'Display Settings'
             ),
-		  
+
 		      array(
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
@@ -1628,10 +1902,10 @@ array(
                     'element' => 'showtitle',
                     'value' => 'yes'
                 ),
-                "group" => 'Title Display Settings'                
+                "group" => 'Title Display Settings'
             ),
-            
-	
+
+
  array(
                 "type" => "dropdown",
                 "heading" => __("Related Post Search?", "js_composer"),
@@ -1643,9 +1917,9 @@ array(
                 "description" => __("Is this pulling through the tagged related posts?", "js_composer"),
                 "group" => 'Query Settings'
             ),
-		  
-          
-            
+
+
+
             array(
                 "type" => "posttypes",
                 "class" => "",
@@ -1653,12 +1927,12 @@ array(
                 "param_name" => "posttypes",
                 "description" => '',
                 "group" => 'Query Settings'
-                
+
             ),
-		  
-		
-			 
-	
+
+
+
+
 		       array(
                 "type" => "dropdown",
                 "heading" => __("Image Display", "js_composer"),
@@ -1668,10 +1942,10 @@ array(
                     'Date' => 'date',
                 ),
                 "description" => __("Display Featured Image or Data?", "js_composer"),
-                "group" => 'Display Settings',                
+                "group" => 'Display Settings',
             ),
-		  
-		
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Content?", "js_composer"),
@@ -1682,10 +1956,10 @@ array(
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-		  
-		  
+
+
 		       array(
                 "type" => "textfield",
                 "heading" => __("Truncate Length", "js_composer"),
@@ -1696,12 +1970,12 @@ array(
                     'element' => 'showcontent',
                     'value' => 'yes'
                 ),
-                "group" => 'Display Settings'                
+                "group" => 'Display Settings'
             ),
-		  
-		  
-		  
-		  	 
+
+
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Divider?", "js_composer"),
@@ -1712,10 +1986,10 @@ array(
                 ),
                 "description" => __("Show horizontal divider", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-		  
-		
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Display Type", "js_composer"),
@@ -1729,12 +2003,12 @@ array(
                 ),
                 "description" => __("Display Set Up", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-            
-       
-   
-		  	 
+
+
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Colour Thumbnails", "js_composer"),
@@ -1745,9 +2019,9 @@ array(
                 ),
                 "description" => __("Has Coloured Thumbnail Overlay?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-		  
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Tax Query", "js_composer"),
@@ -1758,9 +2032,9 @@ array(
                 ),
                 "description" => __("Tax Query?", "js_composer"),
                 "group" => 'Query Settings'
-                
+
             ),
-		  
+
 		      array(
                 "type" => "dropdown",
                 "heading" => __("Tax", "js_composer"),
@@ -1771,29 +2045,29 @@ array(
                    'Sector' =>  'gateley_plc_sector',
 			  'Location' =>  'gateley_plc_location',
                 ),
-			
+
                 "description" => __("Taxonomy", "js_composer"),
                 "group" => 'Query Settings'
-                
+
             ),
-		  
-        
+
+
             array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-            
-            
-            
-            
+
+
+
+
         ),
         'description' => 'Shows this pages child pages in a block grid'
     ));
-    
-   
-   /* NETWORK SITE */ 
+
+
+   /* NETWORK SITE */
 vc_map(array(
         "name" => __("Network Sites"),
         "base" => "networksites",
@@ -1810,18 +2084,18 @@ vc_map(array(
                     'element' => 'showtitle',
                     'value' => 'yes'
                 ),
-                "group" => 'Display Settings'                
+                "group" => 'Display Settings'
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("Amount of Posts to Show", "js_composer"),
                 "param_name" => "amountofposts",
                 "value" => "-1",
                 "description" => __("Amount of posts to show", "js_composer"),
-                "group" => 'Query Settings'                
+                "group" => 'Query Settings'
             ),
-                        
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Title", "js_composer"),
@@ -1833,7 +2107,7 @@ vc_map(array(
                 "description" => __("Show Title", "js_composer"),
                 "group" => 'Display Settings'
             ),
-		  
+
 		 array(
                 "type" => "dropdown",
                 "heading" => __("Masonry?", "js_composer"),
@@ -1846,13 +2120,13 @@ vc_map(array(
                 "group" => 'Display Settings'
             ),
 
-           
-     
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Header Boxed?", "js_composer"),
@@ -1864,7 +2138,7 @@ vc_map(array(
                 "description" => __("Does the header have a block background?", "js_composer"),
                 "group" => 'Display Settings'
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Has Link?", "js_composer"),
@@ -1880,8 +2154,8 @@ vc_map(array(
                 ),
                 "group" => 'Display Settings'
             ),
-            
-            
+
+
             array(
                 "type" => "vc_link",
                 "heading" => __("The Link", "js_composer"),
@@ -1892,14 +2166,14 @@ vc_map(array(
                     'value' => 'yes'
                 ),
                 "group" => 'Display Settings'
-            ),            
-            
-            
-            
-        
-            	 
-         
-		  
+            ),
+
+
+
+
+
+
+
 		   array(
                 "type" => "checkbox",
                 "heading" => __("Exclude Sites", "js_composer"),
@@ -1908,10 +2182,10 @@ vc_map(array(
                 "description" => __("Return Siblins or Children?", "js_composer"),
                 "group" => 'Query Settings',
 		 ),
-            
-		    
-			 
-			 
+
+
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Content?", "js_composer"),
@@ -1922,9 +2196,9 @@ vc_map(array(
                 ),
                 "description" => __("Show a truncated content?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Pagination?", "js_composer"),
@@ -1935,9 +2209,9 @@ vc_map(array(
                 ),
                 "description" => __("Show pagination?", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Display Type", "js_composer"),
@@ -1950,9 +2224,9 @@ vc_map(array(
                 ),
                 "description" => __("Display Set Up", "js_composer"),
                 "group" => 'Display Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Columns Required?", "js_composer"),
@@ -1963,11 +2237,11 @@ vc_map(array(
                 ),
                 "description" => __("Columns Required", "js_composer"),
                 "group" => 'Display Settings'
-                
-                
-                
+
+
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Columns", "js_composer"),
@@ -1993,10 +2267,10 @@ vc_map(array(
                     'element' => 'columngrid',
                     'value' => 'yes'
                 )
-                
+
             ),
-            
-            
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Tablet Columns", "js_composer"),
@@ -2023,7 +2297,7 @@ vc_map(array(
                     'value' => 'yes'
                 )
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Tax Query", "js_composer"),
@@ -2034,9 +2308,9 @@ vc_map(array(
                 ),
                 "description" => __("Tax Query?", "js_composer"),
                 "group" => 'Query Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Pop Up Link?", "js_composer"),
@@ -2047,25 +2321,25 @@ vc_map(array(
                 ),
                 "description" => __("Popup before opening to page?", "js_composer"),
                 "group" => 'Query Settings'
-                
+
             ),
-            
+
             array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-            
-            
-            
-            
+
+
+
+
         ),
         'description' => 'Shows this pages child pages in a block grid'
     ));
-    
-    
-    
+
+
+
     vc_map(array(
         "name" => __("Breadcrumbs"),
         "base" => "breadcrumbs",
@@ -2073,7 +2347,7 @@ vc_map(array(
         "category" => __('Content'),
         "params" => array()
     ));
-    
+
        vc_map(array(
         "name" => __("Accessibility"),
         "base" => "accessibility",
@@ -2081,7 +2355,7 @@ vc_map(array(
         "category" => __('Content'),
         "params" => array()
     ));
-    
+
     vc_map(array(
         "name" => __("Clearfix"),
         "base" => "clearfix",
@@ -2089,10 +2363,10 @@ vc_map(array(
         "category" => __('Content'),
         "params" => array()
     ));
-    
-    
-    
-    
+
+
+
+
     vc_map(array(
         "name" => __("Clients Grid"),
         "base" => "clients",
@@ -2108,7 +2382,7 @@ vc_map(array(
             )
         )
     ));
-    
+
     //Register "container" content element. It will hold all your inner (child) content elements
     vc_map(array(
         "name" => __("PageHeader", "js_composer"),
@@ -2119,7 +2393,7 @@ vc_map(array(
         "content_element" => true,
         "show_settings_on_create" => true,
         "params" => array(
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("class", "js_composer"),
@@ -2138,7 +2412,7 @@ vc_map(array(
                 "heading" => __("Background Colour", "js_composer"),
                 "param_name" => "backgroundcolour",
                 "description" => __("Background Colour", "js_composer")
-                
+
             ),
              array(
                 "type" => "dropdown",
@@ -2149,13 +2423,13 @@ vc_map(array(
                     'Yes' => 'yes'
                 ),
             ),
-            
-            
+
+
         ),
         "js_view" => 'VcColumnView'
     ));
-    
-    
+
+
     //Register "container" content element. It will hold all your inner (child) content elements
     vc_map(array(
         "name" => __("Carousel", "js_composer"),
@@ -2174,8 +2448,8 @@ vc_map(array(
                 "value" => " ",
                 "description" => __("If you would like a title, enter here.", "js_composer")
             ),
-            
-            
+
+
             array(
                 "type" => "dropdown",
                 "heading" => __("Show Title", "js_composer"),
@@ -2185,10 +2459,10 @@ vc_map(array(
                     'Yes' => 'yes'
                 ),
                 "description" => __("Show Title", "js_composer")
-                
+
             ),
-            
-            
+
+
             array(
                 "type" => "textfield",
                 "heading" => __("Auto Scroll Time", "js_composer"),
@@ -2197,7 +2471,7 @@ vc_map(array(
                 "description" => __("Time in seconds - Delete value to turn off Auto Scroll", "js_composer"),
                 "group" => 'Slider Settings'
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2211,8 +2485,8 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Slider Settings'
             ),
-            
-		       
+
+
             array(
                 "type" => "textfield",
                 "heading" => __("Space Between Slides", "js_composer"),
@@ -2270,9 +2544,9 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Slider Settings'
             ),
-            
-            
-            
+
+
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2286,7 +2560,7 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Slider Settings'
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2299,7 +2573,7 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Slider Settings'
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2312,8 +2586,8 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Slider Settings'
             ),
-            
-            
+
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2326,9 +2600,9 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Slider Settings'
             ),
-            
-            
-            
+
+
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2341,7 +2615,7 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Slider Settings'
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("id", "js_composer"),
@@ -2349,22 +2623,22 @@ vc_map(array(
                 "value" => "carousel-" . rand(),
                 "description" => __("REQUIRED... This give the element a unique tag.", "js_composer"),
                 "group" => 'Required Settings'
-                
+
             ),
-            
+
             array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-            
-            
+
+
         ),
         "js_view" => 'VcColumnView'
     ));
-    
-    
+
+
     vc_map(array(
         "name" => __("Carousel Item", "js_composer"),
         "base" => "carouselitem",
@@ -2373,8 +2647,8 @@ vc_map(array(
             'only' => 'carousel'
         ), // Use only|except attributes to limit parent (separate multiple values with comma)
         "params" => array(
-            
-            
+
+
             array(
                 "type" => "attach_image",
                 "heading" => __("Slideimage", "js_composer"),
@@ -2394,7 +2668,7 @@ vc_map(array(
                 "param_name" => "caption_title",
                 "description" => __("Add your caption Title to the slide", "js_composer"),
                 "group" => 'Caption'
-                
+
             ),
             array(
                 "type" => "textarea",
@@ -2402,9 +2676,9 @@ vc_map(array(
                 "param_name" => "caption_text",
                 "description" => __("Add your caption to the slide", "js_composer"),
                 "group" => 'Caption'
-                
+
             ),
-            
+
             array(
                 "type" => "textarea",
                 "heading" => __("Slide Intro", "js_composer"),
@@ -2412,14 +2686,14 @@ vc_map(array(
                 "description" => __("Slide Intro used on slide pagination", "js_composer"),
                 "group" => 'Pagination'
             ),
-            
+
             array(
                 "type" => "attach_image",
                 "heading" => __("Pagination Image", "js_composer"),
                 "param_name" => "paginationimg",
                 "description" => __("Add the pagination image.", "js_composer"),
                 "group" => 'Pagination'
-                
+
             ),
                array(
                 "type" => "vc_link",
@@ -2427,24 +2701,24 @@ vc_map(array(
                 "param_name" => "paginationlink",
                 "description" => __("Enter hyperlink location", "js_composer"),
                 "group" => 'Pagination'
-            ),      
-            
+            ),
+
             array(
                 "type" => "colorpicker",
                 "heading" => __("Text Colour", "js_composer"),
                 "param_name" => "slidetextcol",
                 "description" => __("Slide Text Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
-            
+
             array(
                 "type" => "colorpicker",
                 "heading" => __("Tag & Pagination Background Colour", "js_composer"),
                 "param_name" => "slidecol",
                 "description" => __("Slide Tag & Pagination Background Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
 		   array(
                 "type" => "dropdown",
@@ -2459,8 +2733,8 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Display Settings'
             ),
-		  
-		  
+
+
 		  	   array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2474,24 +2748,24 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Display Settings'
             ),
-		  
-		 
+
+
 		  array(
                 "type" => "colorpicker",
                 "heading" => __("Accessibilty Level AAA Tag & Pagination Background Colour", "js_composer"),
                 "param_name" => "slidecolaaa",
                 "description" => __("Accessibilty Level AAA Slide Tag & Pagination Background Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
-            
+
             array(
                 "type" => "colorpicker",
                 "heading" => __("Tag & Pagination Text Colour", "js_composer"),
                 "param_name" => "slidetagtextcol",
                 "description" => __("Slide Tag & Pagination Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
               array(
                 "type" => "colorpicker",
@@ -2499,9 +2773,9 @@ vc_map(array(
                 "param_name" => "arrowcolor",
                 "description" => __("Arrow Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
-            
+
             array(
                 "type" => "checkbox",
                 "heading" => __("Show Caption?", "js_composer"),
@@ -2513,14 +2787,14 @@ vc_map(array(
                 "description" => __("Show the caption", "js_composer"),
                 "group" => 'Caption'
             ),
-            
+
             array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("id", "js_composer"),
@@ -2528,13 +2802,13 @@ vc_map(array(
                 "value" => "carousel-item-" . rand(),
                 "description" => __("REQUIRED... This give the element a unique tag.", "js_composer")
             )
-            
-            
+
+
         )
-        
+
     ));
-    
-    
+
+
     vc_map(array(
         "name" => __("Testimonial Carousel Item", "js_composer"),
         "base" => "testimonialcarouselitem",
@@ -2549,9 +2823,9 @@ vc_map(array(
                 "param_name" => "caption_testimonial",
                 "description" => __("The testimonial", "js_composer"),
                 "group" => 'Testimonial'
-                
+
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("Author", "js_composer"),
@@ -2559,7 +2833,7 @@ vc_map(array(
                 "description" => __("Who said the quote?", "js_composer"),
                 "group" => 'Testimonial'
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("Author Company", "js_composer"),
@@ -2567,37 +2841,37 @@ vc_map(array(
                 "description" => __("Authors Organisation", "js_composer"),
                 "group" => 'Testimonial'
             ),
-            
-            
-            
+
+
+
             array(
                 "type" => "colorpicker",
                 "heading" => __("Text Colour", "js_composer"),
                 "param_name" => "slidetextcol",
                 "description" => __("Slide Text Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
-            
+
             array(
                 "type" => "colorpicker",
                 "heading" => __("Tag & Pagination Background Colour", "js_composer"),
                 "param_name" => "slidecol",
                 "description" => __("Slide Tag & Pagination Background Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
-            
+
             array(
                 "type" => "colorpicker",
                 "heading" => __("Tag & Pagination Text Colour", "js_composer"),
                 "param_name" => "slidetagtextcol",
                 "description" => __("Slide Tag & Pagination Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
-            
-            
+
+
             array(
                 "type" => "checkbox",
                 "heading" => __("Show Caption?", "js_composer"),
@@ -2609,12 +2883,12 @@ vc_map(array(
                 "description" => __("Show the caption", "js_composer"),
                 "group" => 'Caption'
             )
-            
+
         )
-        
+
     ));
-    
-    
+
+
     //Register "container" content element. It will hold all your inner (child) content elements
     vc_map(array(
         "name" => __("TimeLine", "js_composer"),
@@ -2632,27 +2906,27 @@ vc_map(array(
                 "param_name" => "title",
                 "value" => " ",
                 "description" => __("If you would like a title, enter here.", "js_composer")
-            ),   
+            ),
 		  array(
                 "type" => "textfield",
                 "heading" => __("Timeline Bar Position", "js_composer"),
                 "param_name" => "barbottom",
                 "value" => " ",
                 "description" => __("Where does the timeline need to stop?", "js_composer")
-            ),            
+            ),
             array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-            
-            
+
+
         ),
         "js_view" => 'VcColumnView'
     ));
-    
-      
+
+
     vc_map(array(
         "name" => __("Timeline Item", "js_composer"),
         "base" => "timelineitem",
@@ -2666,22 +2940,22 @@ vc_map(array(
                 "heading" => __("Caption", "js_composer"),
                 "param_name" => "caption",
                 "description" => __("The Article Content", "js_composer"),
-                
+
             ),
 		  array(
                 "type" => "textfield",
                 "heading" => __("Date", "js_composer"),
                 "param_name" => "datecaption",
                 "description" => __("The Article Date", "js_composer"),
-                
+
             ),
-        
-	   
-            
+
+
+
         )
-        
+
     ));
-    
+
     vc_map(array(
         "name" => __("Circle Nav", "js_composer"),
         "base" => "circlenav",
@@ -2698,22 +2972,22 @@ vc_map(array(
                 "param_name" => "title",
                 "value" => " ",
                 "description" => __("If you would like a title, enter here.", "js_composer")
-            ),   
+            ),
 		  array(
                 "type" => "textfield",
                 "heading" => __("Timeline Bar Position", "js_composer"),
                 "param_name" => "barbottom",
                 "value" => " ",
                 "description" => __("Where does the timeline need to stop?", "js_composer")
-            ),            
+            ),
             array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             ),
-		  
-		  
+
+
 		     array(
                 "type" => "checkbox",
                 "heading" => __("Pages", "js_composer"),
@@ -2722,15 +2996,15 @@ vc_map(array(
                 "description" => __("Return Siblins or Children?", "js_composer"),
                 "group" => 'Query Settings',
 		 ),
-            
-		    
-            
-            
+
+
+
+
         ),
         "js_view" => 'VcColumnView'
     ));
-    
-      
+
+
     vc_map(array(
         "name" => __("Circle Navigation Item", "js_composer"),
         "base" => "circle_nav_item",
@@ -2744,25 +3018,25 @@ vc_map(array(
                 "heading" => __("Caption", "js_composer"),
                 "param_name" => "caption",
                 "description" => __("The Article Content", "js_composer"),
-                
+
             ),
 		  array(
                 "type" => "textfield",
                 "heading" => __("Date", "js_composer"),
                 "param_name" => "datecaption",
                 "description" => __("The Article Date", "js_composer"),
-                
+
             ),
-        
-	   
-            
+
+
+
         )
-        
+
     ));
-    
-    
-    
-    
+
+
+
+
     vc_map(array(
         "name" => __("Icon Box", "js_composer"),
         "base" => "iconbox",
@@ -2783,7 +3057,7 @@ vc_map(array(
                     'Spanner' => 'icon icon-spanner',
                     'Clipboard Notes' => 'fi-clipboard-notes',
                     'Safety Cone' => 'fi-safety-cone'
-                    
+
                 ),
                 "description" => ''
             ),
@@ -2793,13 +3067,13 @@ vc_map(array(
                 "param_name" => "iconcontent",
                 "description" => __("Content", "js_composer")
             )
-            
+
         )
     ));
-    
-    
-    
-    
+
+
+
+
     vc_map(array(
         "name" => __("Twitter Feed", "js_composer"),
         "base" => "twitterfeed",
@@ -2809,27 +3083,27 @@ vc_map(array(
                 "type" => "textfield",
                 "heading" => __("WIDGET ID", "js_composer"),
                 "param_name" => "widgetid"
-                
+
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("Screen Name", "js_composer"),
                 "param_name" => "screenname"
-                
+
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("Tweet Count", "js_composer"),
                 "param_name" => "datatweetlimit",
                 "group" => 'Display Settings'
-                
+
             ),
-            
-            
-            
-            
+
+
+
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2842,8 +3116,8 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Display Settings'
             ),
-            
-            
+
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2856,7 +3130,7 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Display Settings'
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2869,7 +3143,7 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Display Settings'
             ),
-            
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2882,44 +3156,44 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Display Settings'
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("Widget Width", "js_composer"),
                 "param_name" => "twitter_widget_width",
                 "group" => 'Widget Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "textfield",
                 "heading" => __("Widget Height", "js_composer"),
                 "param_name" => "twitter_widget_height",
                 "group" => 'Widget Settings'
-                
+
             ),
-            
+
             array(
                 "type" => "colorpicker",
                 "heading" => __("Border Colour", "js_composer"),
                 "param_name" => "bordercol",
                 "description" => __("Border Colour - if not hidden", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             ),
-            
+
             array(
                 "type" => "colorpicker",
                 "heading" => __("Link Colour", "js_composer"),
                 "param_name" => "linkcol",
                 "description" => __("Link Colour", "js_composer"),
                 "group" => 'Colour Options'
-                
+
             )
-            
+
         )
     ));
-    
+
      vc_map(array(
         "name" => __("Sitemap", "js_composer"),
         "base" => "sitemap",
@@ -2929,13 +3203,13 @@ vc_map(array(
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
-          
-            
+
+
         )
     ));
-    
+
     vc_map(array(
         "name" => __("Wordpress Blog Feed", "js_composer"),
         "base" => "blogfeed",
@@ -2945,24 +3219,24 @@ vc_map(array(
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
-            
+
             array(
                 "type" => "exploded_textarea",
                 "heading" => __("Feed Url", "js_composer"),
                 "param_name" => "feedurl"
-                
+
             ),
-            
+
             array(
                 "type" => "exploded_textarea",
                 "heading" => __("blogurl", "js_composer"),
                 "param_name" => "blogurl"
-                
+
             ),
-            
-            
+
+
              array(
                 "type" => "dropdown",
                 "heading" => __("Show Post Meta?", "js_composer"),
@@ -2972,10 +3246,10 @@ vc_map(array(
                     'Yes' => 'yes'
                 ),
                 "group" => 'Display Settings'
-                
+
             ),
-            
-            
+
+
             array(
                 "type" => "dropdown",
                 "class" => "",
@@ -2988,11 +3262,11 @@ vc_map(array(
                 "description" => '',
                 "group" => 'Display Settings'
             )
-            
-            
+
+
         )
     ));
-    
+
     vc_map(array(
         "name" => __("Spotlight Feed", "js_composer"),
         "base" => "spotlightfeed",
@@ -3002,9 +3276,9 @@ vc_map(array(
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             )
-            
+
         )
     ));
      vc_map(array(
@@ -3016,7 +3290,7 @@ vc_map(array(
                 "type" => "textfield",
                 "heading" => __("Title", "js_composer"),
                 "param_name" => "title"
-                
+
             ),
 		   array(
                 "type" => "dropdown",
@@ -3031,7 +3305,7 @@ vc_map(array(
                 "description" => __("Is this pulling through the tagged related posts?", "js_composer"),
                 "group" => 'Query Settings'
             ),
-			
+
 			 array(
                 "type" => "dropdown",
                 "heading" => __("Show Region?", "js_composer"),
@@ -3043,8 +3317,8 @@ vc_map(array(
                 "description" => __("Show Region Information", "js_composer"),
                 "group" => 'Display Settings'
                ),
-			
-		  
+
+
 		    array(
                 "type" => "dropdown",
                 "heading" => __("Tax", "js_composer"),
@@ -3059,16 +3333,16 @@ vc_map(array(
                 ),
                 "description" => __("Taxonomy", "js_composer"),
                 "group" => 'Query Settings'
-                
+
             ),
-		  
+
 		      array(
                 'type' => 'css_editor',
                 'heading' => __('Css', 'my-text-domain'),
                 'param_name' => 'css',
                 'group' => __('Design options', 'my-text-domain')
             )
-            
+
         )
     ));
     vc_map(array(
@@ -3088,10 +3362,10 @@ vc_map(array(
                 "description" => __("Content", "js_composer"),
                 "value" => 'Use this form to search for People, Pages, Events and our Latest News.'
             )
-            
+
         )
     ));
-    
+
     vc_map(array(
         "name" => __("Modal", "js_composer"),
         "base" => "modal",
@@ -3148,13 +3422,13 @@ vc_map(array(
     "param_name" => "el_class",
     "value" => "",
     )
-    
-    
-    
+
+
+
     )
     );
     vc_map_update('vc_row', $setting);*/
-    
+
     if (class_exists('WPBakeryShortCodesContainer')) {
         class WPBakeryShortCode_Carousel extends WPBakeryShortCodesContainer
         {
@@ -3165,7 +3439,7 @@ vc_map(array(
         {
         }
     }
-    
+
       if (class_exists('WPBakeryShortCodesContainer')) {
         class WPBakeryShortCode_Circle_Nav extends WPBakeryShortCodesContainer
 
@@ -3173,13 +3447,13 @@ vc_map(array(
         }
 	           class WPBakeryShortCode_CircleNav extends WPBakeryShortCodesContainer{}
     }
-    
+
     if (class_exists('WPBakeryShortCodesContainer')) {
         class WPBakeryShortCode_Modal extends WPBakeryShortCodesContainer
         {
         }
     }
-	
+
 	 if (class_exists('WPBakeryShortCodesContainer')) {
         class WPBakeryShortCode_Link_Container extends WPBakeryShortCodesContainer
         {
@@ -3202,7 +3476,7 @@ vc_map(array(
 
 
     }
-    
+
     /* Remove Unwanted Items
     vc_remove_element("vc_images_carousel");
     vc_remove_element("vc_wp_recentcomments");

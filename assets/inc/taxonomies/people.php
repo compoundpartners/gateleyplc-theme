@@ -1,6 +1,6 @@
 <?php // peoples
 function gateley_plc_custom_people_taxonomies() {
- 
+
   // Add new taxonomy, make it hierarchical (like categories)
   $labels = array(
     'name'              => _x( 'People', 'taxonomy general name' ),
@@ -15,8 +15,8 @@ function gateley_plc_custom_people_taxonomies() {
     'new_item_name'     => __( 'New Contact Name' ),
     'menu_name'         => __( 'Contact(s)' ),
   );
- $screens =  array('page', 'post', 'people', 'services', 'sectors', 'careers', 'publications'); 
-foreach( $screens as $screen) { 
+ $screens =  array('page', 'post', 'people', 'services', 'sectors', 'careers', 'publications', 'corporate-deals', 'housebuilder-markets', 'talking-matters', 'talking-trainees'); 
+foreach( $screens as $screen) {
 add_filter( 'manage_edit-'.strtolower($screen).'_columns', 'my_Contact_columns', 100 );
 
 
@@ -41,7 +41,7 @@ function custom_Contact_columns( $column, $post_id ) {
 				_e( 'No Contact(s) Set', 'gateley-plc' );
 			}
 			break;
-		
+
 	}
 }
 
@@ -52,8 +52,6 @@ function custom_Contact_columns( $column, $post_id ) {
     'query_var'    => true,
     'rewrite'      => array( 'slug' => 'people' ),
   ));
- 
+
 }
 add_action( 'init', 'gateley_plc_custom_people_taxonomies');
-
-

@@ -1,6 +1,6 @@
 <?php // services
 function gateley_plc_custom_service_taxonomies() {
- 
+
   // Add new taxonomy, make it hierarchical (like categories)
   $labels = array(
     'name'              => _x( 'Services', 'taxonomy general name' ),
@@ -15,8 +15,8 @@ function gateley_plc_custom_service_taxonomies() {
     'new_item_name'     => __( 'New Service Name' ),
     'menu_name'         => __( 'Service' ),
   );
- $screens =  array('page', 'post', 'people', 'services', 'sectors', 'careers'); 
-foreach( $screens as $screen) { 
+ $screens =  array('page', 'post', 'people', 'services', 'sectors', 'careers', 'corporate-deals', 'housebuilder-markets', 'talking-matters', 'talking-trainees'); 
+foreach( $screens as $screen) {
 add_filter( 'manage_edit-'.strtolower($screen).'_columns', 'my_Service_columns', 100 );
 
 
@@ -41,7 +41,7 @@ function custom_Service_columns( $column, $post_id ) {
 				_e( 'No Service(s) Set', 'gateley-plc' );
 			}
 			break;
-		
+
 	}
 }
 
@@ -52,7 +52,6 @@ function custom_Service_columns( $column, $post_id ) {
     'query_var'    => true,
     'rewrite'      => array( 'slug' => 'services' ),
   ));
- 
+
 }
 add_action( 'init', 'gateley_plc_custom_service_taxonomies');
-
