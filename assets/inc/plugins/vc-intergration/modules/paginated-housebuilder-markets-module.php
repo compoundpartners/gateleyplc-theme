@@ -19,7 +19,7 @@ function paginatedhousebuildermarkets_func( $atts ) {
   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
   $args = array(
-    'post_type'=>'housebuilder-markets',
+    'post_type'=>'housebuilder-market',
     //'order'=>'ASC',
     'posts_per_page' => 16,
     'paged' => $paged,

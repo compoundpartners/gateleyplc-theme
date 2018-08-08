@@ -15,7 +15,7 @@ function gateley_plc_custom_service_taxonomies() {
     'new_item_name'     => __( 'New Service Name' ),
     'menu_name'         => __( 'Service' ),
   );
- $screens =  array('page', 'post', 'people', 'services', 'sectors', 'careers', 'corporate-deals', 'housebuilder-markets', 'talking-matters', 'talking-trainees'); 
+ $screens =  array('page', 'post', 'people', 'services', 'sectors', 'careers', 'corporate-deals', 'housebuilder-market', 'talking-matters', 'talking-trainees'); 
 foreach( $screens as $screen) {
 add_filter( 'manage_edit-'.strtolower($screen).'_columns', 'my_Service_columns', 100 );
 

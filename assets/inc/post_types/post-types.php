@@ -50,7 +50,7 @@ function blogs_admin_page() {
   	<div class="wrap">
   		<h2>Blogs</h2>
       <h3><a href="/wp-admin/edit.php?post_type=corporate-deals">Corporate Deals</a></h3>
-      <h3><a href="/wp-admin/edit.php?post_type=housebuilder-markets">Housebuilder Markets</a></h3>
+      <h3><a href="/wp-admin/edit.php?post_type=housebuilder-market">Housebuilder Market</a></h3>
       <h3><a href="/wp-admin/edit.php?post_type=talking-matters">Talking Matters</a></h3>
       <h3><a href="/wp-admin/edit.php?post_type=talking-trainees">Talking Trainees</a></h3>
   	</div>
@@ -75,7 +75,8 @@ require get_template_directory() . '/assets/inc/post_types/corporate-deals.php';
 /*================================================================================================================================================================================================================================================
 Function: Housebuilder Markets - POST TYPE
 ================================================================================================================================================================================================================================================*/
-require get_template_directory() . '/assets/inc/post_types/housebuilder-markets.php';
+require get_template_directory() . '/assets/inc/post_types/housebuilder-market.php';
+
 
 /*================================================================================================================================================================================================================================================
 Function: Talking Matters - POST TYPE

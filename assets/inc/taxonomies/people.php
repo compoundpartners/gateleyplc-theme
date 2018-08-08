@@ -15,7 +15,7 @@ function gateley_plc_custom_people_taxonomies() {
     'new_item_name'     => __( 'New Contact Name' ),
     'menu_name'         => __( 'Contact(s)' ),
   );
- $screens =  array('page', 'post', 'people', 'services', 'sectors', 'careers', 'publications', 'corporate-deals', 'housebuilder-markets', 'talking-matters', 'talking-trainees'); 
+ $screens =  array('page', 'post', 'people', 'services', 'sectors', 'careers', 'publications', 'corporate-deals', 'housebuilder-market', 'talking-matters', 'talking-trainees'); 
 foreach( $screens as $screen) {
 add_filter( 'manage_edit-'.strtolower($screen).'_columns', 'my_Contact_columns', 100 );
 

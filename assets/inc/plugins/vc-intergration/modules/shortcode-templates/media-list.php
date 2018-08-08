@@ -92,7 +92,7 @@
 
   if($showcontent == 'yes') {
 
-    if(get_post_type() == 'talking-trainees' || get_post_type() == 'housebuilder-markets' || get_post_type() == 'talking-matters' || get_post_type() == 'corporate-deals') {
+    if(get_post_type() == 'talking-trainees' || get_post_type() == 'housebuilder-market' || get_post_type() == 'talking-matters' || get_post_type() == 'corporate-deals') {
       $exerpt = strip_tags( get_post_field( 'post_excerpt', get_the_ID() ));
     } else {
       $exerpt = strip_tags( get_post_meta( get_the_ID(), '_Overview', true ));
@@ -108,7 +108,7 @@
 
   $output .='</a>';
 
-  if(get_post_type() == 'post' || get_post_type() == 'talking-trainees' || get_post_type() == 'housebuilder-markets' || get_post_type() == 'talking-matters' || get_post_type() == 'corporate-deals') {
+  if(get_post_type() == 'post' || get_post_type() == 'talking-trainees' || get_post_type() == 'housebuilder-market' || get_post_type() == 'talking-matters' || get_post_type() == 'corporate-deals') {
     $output .='<br><a href="'.get_the_permalink().'"><strong>';
     $output .='Read More';
     $output .='</strong></a>';

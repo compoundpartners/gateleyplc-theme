@@ -15,7 +15,7 @@ function gateley_plc_custom_sector_taxonomies() {
     'new_item_name'     => __( 'New Sector Name' ),
     'menu_name'         => __( 'Sector' ),
   );
- $screens =  array('page', 'post', 'people', 'services', 'sectors', 'corporate-deals', 'housebuilder-markets', 'talking-matters', 'talking-trainees');
+ $screens =  array('page', 'post', 'people', 'services', 'sectors', 'corporate-deals', 'housebuilder-market', 'talking-matters', 'talking-trainees');
 foreach( $screens as $screen) {
 add_filter( 'manage_edit-'.strtolower($screen).'_columns', 'my_Sector_columns', 100 );
 
