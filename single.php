@@ -6,7 +6,7 @@
  *
  * @package gateley-plc
  */
- 
+
 global $post; // < -- globalize, just in case
 if ($post->type == 'careers') {
 $field = get_post_meta($post->ID, '_externalLink', true);
@@ -27,19 +27,19 @@ if ('post' ==  get_post_type()) {
 			get_template_part( 'assets/template-parts/content', 'single-'.get_post_type() );
 
 			}?>
-               
-               <?php 
+
+               <?php
 //echo(my_get_post_views());
 ?>
 
 
-		
+
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
-<?php 
+<?php
 my_set_post_views(get_the_ID());
 ?>

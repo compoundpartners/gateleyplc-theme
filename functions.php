@@ -49,7 +49,7 @@ function gateley_plc_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -82,7 +82,7 @@ require get_template_directory() . '/assets/inc/functions-all.php';
 
 /**
  ** THEME SETUP!
-**/ 
+**/
 $themeswithcer = get_option('themetype');
 switch ($themeswithcer) {
     case "main":
@@ -103,4 +103,3 @@ remove_action( 'wp_head', 'addNoScript', 20000 );
  * Disable the WPSEO v3.1+ Primary Category feature.
  */
 add_filter( 'wpseo_primary_term_taxonomies', '__return_empty_array' );
-

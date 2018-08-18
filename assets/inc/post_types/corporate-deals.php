@@ -32,6 +32,7 @@
       'menu_icon' => 'dashicons-welcome-add-page',  // Icon Path
       'menu_position' => 5,
       'show_in_menu'  =>	'blogs_menu',
+      'query_var' => true,
       'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'revisions' ),
     );
 
