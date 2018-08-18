@@ -31,7 +31,7 @@ img {
 	border-radius: 50%;
 }
 
-/* 
+/*
 ** Thumbsnail
 ** Settings
 */
@@ -69,8 +69,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   padding: 9px 9px 0;
 }
 .thumbnail.thumbnail-overlay {padding:0px;position:relative; min-height:100px; margin-bottom:20px !important;}
-.thumbnail.thumbnail-overlay .caption {   
- /*display: table-cell; 
+.thumbnail.thumbnail-overlay .caption {
+ /*display: table-cell;
 vertical-align: middle;
     display: flex;*/
   flex-direction: column;
@@ -94,7 +94,7 @@ padding:25% 30px 30px;
 .ie7 .sidebar .swiper-slide.slide-1, .ie6 .sidebar .swiper-slide.slide-1, .ie7 .sidebar .swiper-slide.slide-2, .ie6 .sidebar .swiper-slide.slide-2 {
 	display:block;
 }
-/* 
+/*
 ** Media
 ** Set Up
 */
@@ -142,10 +142,10 @@ a.media .media-body, .media.white .media-body {
 }
 .media.list .media-left {
 bottom:10px;
-	
+
 }
 .media.list .media-body {
-height:50px;	
+height:50px;
 padding-left:70px !important;
 }
 
@@ -156,7 +156,7 @@ padding-left:70px !important;
 }
 
 .financialevents.media {
-min-height:80px;	
+min-height:80px;
 }
 .sidebar .list-item:last-child .media {border-bottom-color:transparent; margin-bottom:30px}
 
@@ -196,17 +196,17 @@ min-height:80px;
 }
 
  .media.medialist .media-left{padding-right:0px;}
- 
- 
+
+
 .people .media-left, .people .media > .pull-left {
 	padding-right:15px;
 }
 .search-results .media-left {
-	padding-right:10px;	
+	padding-right:10px;
 }
 .search-results .media {
 border:1px solid #e2e2e2;
-min-height:100px;	
+min-height:100px;
 }
 .search-results .media-object {
   display: block;
@@ -311,7 +311,7 @@ min-height:100px;
 .sidebar .media-left .placeholder-block {background:#fff; }
 
 .sidebar .media-left .placeholder-block .icon {
-color:#dadbde;	
+color:#dadbde;
 }
 
 
@@ -322,11 +322,11 @@ padding: 10px;
 
 .media-left .placeholder-block.placeholder-small .icon {
 font-size:25px;
-width:25px; height:25px;	
+width:25px; height:25px;
 }
 .media-left .placeholder-block .icon {
 font-size:40px;
-height:40px; width:40px;	
+height:40px; width:40px;
 }
 .media-left .date-block {
   background: #3d1a54 none repeat scroll 0 0;
@@ -336,7 +336,7 @@ height:40px; width:40px;
 
 .date-block-default {
 background:transparent;
-text-align:center;	
+text-align:center;
 }
 .media-left .date-block-default .day {
 
@@ -348,7 +348,7 @@ color:#60c6c5;
   display:block;
   line-height:1;
     color: #ffffff;
-	
+
 }
 
 .media-left .month {
@@ -417,3 +417,10 @@ min-height:140px;
 .page-template-people-page-version2 .media {
 margin-bottom:20px !important;
 }
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
