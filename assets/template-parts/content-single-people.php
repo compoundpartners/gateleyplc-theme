@@ -11,20 +11,20 @@
 <?php $hbjorgateley = wp_get_post_terms($post->ID, 'gateley_plc_or_hbj_gateley', array("fields" => "names"));  ?>
 <?php if($hbjorgateley[0] == 'HBJ Gateley') {
 $homelink =  get_site_url(get_option('sitesplithbjgateley'));
-} elseif($hbjorgateley[0] == 'Gateley Plc') { 
+} elseif($hbjorgateley[0] == 'Gateley Plc') {
 $homelink = get_site_url(get_option('sitesplitgateley'));
 } else {
-$homelink = home_url();	
+$homelink = home_url();
 } if($homelink == home_url()) {
-$thetarget= "";	
+$thetarget= "";
 } else {
-	$thetarget= "_blank";	
+	$thetarget= "_blank";
 }?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
      <?php get_template_part( 'assets/template-parts/header/single', 'people-header' );  ?>
      <!-- .entry-header -->
-     
+
      <div class="entry-content container">
           <div class="content-inner        <?php if(get_option('hidenpb') !== '1') {
  ?>mb0<?php } ?>">
@@ -52,10 +52,10 @@ $thetarget= "";
 	 $countingterms = count($terms);
      foreach ( $terms as $term ) {
        echo $term;
-	  
+
 	  if( $countingterms  > 1) { echo ', '; }
 	  $looping++;
-        
+
      }
  }
 				    ?>
@@ -103,7 +103,7 @@ $thetarget= "";
                               <a href="<?php echo   $twitter; ?>" class="btn btn-default" target="_blank">
                               <em class="icon icon-social-twitter"></em>
                               <span class="sr-only">Twitter</span></a>
-                              <?php  $blogurl = get_post_meta($post->ID, '_personBlog', true); 
+                              <?php  $blogurl = get_post_meta($post->ID, '_personBlog', true);
 					if (!filter_var($blogurl, FILTER_VALIDATE_URL) === false) {                    ?>
                               <a href="<?php echo  $blogurl;?>" class="btn btn-default" target="_blank">
                               <em class="icon icon-rss"></em>
@@ -119,9 +119,9 @@ $thetarget= "";
 	 echo '<ul class="list-square mb20">';
 	 $countingterms = count($terms);
      foreach ( $serviceterms as $sterm ) {
-		
+
 		$thepage = get_page_by_title( $sterm->name, ARRAY_A, 'services' );
-		if(!empty($thepage)) { 
+		if(!empty($thepage)) {
 		 echo '<li><a href="'.$homelink.'/services/'.$thepage['post_name'].'" target="'.$thetarget.'">'.$thepage['post_title']."</a></li>";
 		} else {
        echo '<li><a href="'.$homelink.'/services/'.$sterm->slug.'" target="'.$thetarget.'">'.$sterm->name."</a></li>";
@@ -130,7 +130,7 @@ $thetarget= "";
 	 //echo "<!-- ".var_dump(get_page_by_title( $sterm->name, ARRAY_A, 'services' ))." -->";
 	  }
 	  $looping++;
-        
+
      }
 	echo '</ul>';
 
@@ -145,13 +145,13 @@ $thetarget= "";
 	 $countingterms = count($sectorterms);
      foreach ( $sectorterms as $sectterm ) {
 		$thepage = get_page_by_title( $sectterm->name, ARRAY_A, 'services' );
-		if(!empty($thepage)) { 
+		if(!empty($thepage)) {
 		 echo '<li><a href="'.$homelink.'/sectors/'.$thepage['post_name'].'" target="'.$thetarget.'">'.$thepage['post_title']."</a></li>";
 		} else {
        	echo '<li><a href="'.$homelink.'/sectors/'.$sectterm->slug.'" target="'.$thetarget.'">'.$sectterm->name."</a></li>";
-		}		
+		}
 	  $looping++;
-        
+
      }
 	echo '</ul>';
 
@@ -167,17 +167,19 @@ $thetarget= "";
 		?>
           </div>
           <?php if(get_option('hidenpb') !== 1) {
- $columns = '';  
- 
+ $columns = '';
+
  if($columns == '1') {
-	$wellclass = 'vc_col-sm-12'; 
+	$wellclass = 'vc_col-sm-12';
  } elseif($columns == '2') {
-	$wellclass = 'vc_col-sm-6';  
+	$wellclass = 'vc_col-sm-6';
  } else {
-	$wellclass = 'vc_col-sm-4';  
+	$wellclass = 'vc_col-sm-4';
  }
- 
+
  ;?>
+
+ <!--
           <div class="well extra">
           <?php $pagetitle = get_the_title(); ?>
                <div class="vc_row mb0 wpb_row vc_row-fluid">
@@ -194,26 +196,26 @@ $thetarget= "";
 	),
 );
 $slug = the_slug();
-query_posts($args); 
+query_posts($args);
 $count=0;
 if(have_posts()) {  query_posts($args); ?>
-               
+
                     <div class="wpb_column vc_column_container <?php echo $wellclass; ?> breifings">
                          <h5>
                               <?php echo $pagetitle; ?>'s News Items</h5>
 <?php
 $output;
-while (have_posts()) : the_post(); 
+while (have_posts()) : the_post();
 global $post;
 echo '<div class="media">';
 echo '<div class="media-left">';
 
 echo '<a href="'.get_the_permalink().'">';
-echo"<div class='date-block-default media-object'><span class='day'>".date('d', strtotime(get_the_date())).'</span>'; 
- echo "<span class='month'>".date('M', strtotime(get_the_date())).'</span></div>';  
+echo"<div class='date-block-default media-object'><span class='day'>".date('d', strtotime(get_the_date())).'</span>';
+ echo "<span class='month'>".date('M', strtotime(get_the_date())).'</span></div>';
  echo '</a>';
   echo '</div>';
-  
+
   echo '<div class="media-body">';
   echo '<a href="'.get_the_permalink().'">';
 
@@ -228,7 +230,7 @@ echo truncate($content, 80);
 }
   echo ' <a href="'.get_the_permalink().'" class="btn-link">Read More</a>';
   echo '</div>';
-  echo '</div>';	
+  echo '</div>';
   endwhile;
 ?>
 
@@ -250,27 +252,27 @@ $args = array(
 	),
 );
 $slug = the_slug();
-query_posts($args); 
+query_posts($args);
 $count=0;
-if(have_posts()) {  query_posts($args); 
+if(have_posts()) {  query_posts($args);
 $output;
 ?>
                     <div class="wpb_column vc_column_container <?php echo $wellclass; ?> breifings">
                          <h5>
                               <?php echo $pagetitle; ?>'s Briefings</h5>
-<?php                    
+<?php
 global $post;
-while (have_posts()) : the_post(); 
+while (have_posts()) : the_post();
 
 echo '<div class="media">';
 echo '<div class="media-left">';
 $attachment = get_post_meta(get_the_ID(), '_publication', true);
 echo '<a href="'.wp_get_attachment_url( $attachment ).'">';
-echo"<div class='date-block-default media-object'><span class='day'>".date('d', strtotime(get_the_date())).'</span>'; 
- echo "<span class='month'>".date('M', strtotime(get_the_date())).'</span></div>';  
+echo"<div class='date-block-default media-object'><span class='day'>".date('d', strtotime(get_the_date())).'</span>';
+ echo "<span class='month'>".date('M', strtotime(get_the_date())).'</span></div>';
  echo '</a>';
   echo '</div>';
-  
+
   echo '<div class="media-body">';
   echo '<a href="'.wp_get_attachment_url( $attachment ).'">';
 
@@ -285,19 +287,19 @@ echo truncate($content, 80);
 }
   echo ' <a href="'.wp_get_attachment_url( $attachment ).'" class="btn-link">Read More</a>';
   echo '</div>';
-  echo '</div>';	
- 
+  echo '</div>';
+
 endwhile;
 ?>                  </div>
                     <?php  wp_reset_query();
 					$columns = $columns + 1;
-} 
-?>                     <?php 
+}
+?>                     <?php
 				$currentblog = get_current_blog_id();
 				   $blog_url = str_replace('http://', '', $blogurl);
 											  $blog_url = str_replace('/', '',  $blog_url);
-											  $blog_id = get_blog_id_from_url($blog_url);  } 
-                                              
+											  $blog_id = get_blog_id_from_url($blog_url);  }
+
 				$theposts = array();
           					  switch_to_blog($blog_id);
 							  global $option;
@@ -315,28 +317,28 @@ endwhile;
 	),*/
 );
 $slug = the_slug();
-query_posts($args); 
+query_posts($args);
 $count=0;
-if(have_posts()) {  
-?> 
+if(have_posts()) {
+?>
                     <div class="wpb_column vc_column_container <?php echo $wellclass; ?> breifings">
                          <h5>
                               <?php echo $pagetitle; ?>'s Blog Articles</h5>
-                              
+
     <?php
 $output;
-while (have_posts()) : the_post();   
+while (have_posts()) : the_post();
 
 
 echo '<div class="media">';
 echo '<div class="media-left">';
 
 echo '<a href="'.get_the_permalink().'">';
-echo"<div class='date-block-default media-object'><span class='day'>".date('d', strtotime(get_the_date())).'</span>'; 
- echo "<span class='month'>".date('M', strtotime(get_the_date())).'</span></div>';  
+echo"<div class='date-block-default media-object'><span class='day'>".date('d', strtotime(get_the_date())).'</span>';
+ echo "<span class='month'>".date('M', strtotime(get_the_date())).'</span></div>';
  echo '</a>';
   echo '</div>';
-  
+
   echo '<div class="media-body">';
   echo '<a href="'.get_the_permalink().'">';
 
@@ -357,33 +359,36 @@ echo truncate($content, 80);
 
 
   echo '</div>';
-  echo '</div>';	
-  							 							 
-$count++;		 							 
-endwhile;							 
+  echo '</div>';
+
+$count++;
+endwhile;
 ?>
                     </div>
                     <?php $columns = $columns + 1;
  }
 							//  }
-							
 
-			
+
+
 		switch_to_blog($currentblog);
 		wp_reset_query();
 				?>
                </div>
           </div>
-                                         
+
+					 -->
+					&nbsp;
 
 
      </div>
+
+
      <!-- .entry-content -->
-     
+
      <footer class="entry-footer container">
           <?php gateley_plc_entry_footer(); ?>
      </footer>
      <!-- .entry-footer -->
 </article>
 <!-- #post-## -->
-
